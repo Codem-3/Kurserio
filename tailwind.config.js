@@ -1,17 +1,16 @@
 module.exports = {
-    content: ["./**/*.html"],
+    content: ["./**/*.html"], // Path to the files that contain Tailwind CSS classes
     theme: {
         extend: {
             colors: {
-                primaryColor: "#2A3847",
-                secondaryColor: "#BC281A",
-                tertiaryColor: "#0466AF",
+                primaryColor: "#ddf487", // Custom primary color
+                secondaryColor: "#ebded4", // Custom secondary color
             },
             screens: {
-                'vsm': '460px',
-                'tiny': '410px',
+                'vsm': '460px',  // Breakpoint for very small screens
+                'tiny': '410px', // Breakpoint for tiny screens
             },
         },
     },
-    plugins: [],
+    plugins: [], // Array to include any Tailwind CSS plugins
 };

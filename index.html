@@ -4,15 +4,98 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./assets/images/symbol.png" />
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
     <link href="./styles/output.css" rel="stylesheet" />
     <link href="./styles/custom.css" rel="stylesheet" />
     <title>Kurserio</title>
+    <style>
+
+    </style>
 </head>
 
-<body>
-    <h1 class="text-violet-900 text-8xl underline">Test fa</h1>
-    <h1 class="text-violet-900 underline text-2xl">Test</h1>
+<body class="h-screen">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-20">
+        <img src="./assets/images/logo.png" alt="Kurserio Icon">
+        <nav class="flex justify-center items-center gap-9 font-semibold">
+            <a href="#" class="underline underline-offset-4 decoration-primaryColor decoration-2">Für Kursanbietende</a>
+            <a href="#" class="underline underline-offset-4 decoration-primaryColor decoration-2">Für Unternehmen</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-heroSection text-center relative shadow-inner">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-1/2 h-full object-cover z-0">
+            <source src="./assets/images/forLanding/hero1.mp4" type="video/mp4">
+            <source src="path-to-your-video.webm" type="video/webm">
+            Your browser does not support video playback.
+        </video>
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute top-0 right-0 w-1/2 h-full object-cover z-0">
+            <source src="./assets/images/forLanding/hero1.mp4" type="video/mp4">
+            <source src="path-to-your-video.webm" type="video/webm">
+            Your browser does not support video playback.
+        </video>
+
+        <!-- Content -->
+        <div class="relative z-10 py-20">
+            <h1 class="text-6xl font-semibold uppercase">Effiziente & INTUITIVE Lösungen</h1>
+            <h2 class="text-6xl font-semibold uppercase">
+                für Kursanbietende <span class="mx-8">und</span> FÜR Unternehmen
+            </h2>
+
+            <div class="flex justify-around gap-20 mx-20">
+                <!-- Section for Course Providers -->
+                <article class="text-left my-5 w-full max-w-[420px] text-black">
+                    <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full mt-6 mb-5 font-semibold">Für
+                        Kursanbietende
+                    </p>
+                    <h3 class="text-xl font-bold uppercase">FLEXIBEL. EINFACH. kundennah.</h3>
+                    <h4 class="text-xl font-semibold">Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre
+                        Leidenschaft
+                    </h4>
+                    <h5 class="text-xl text-left font-normal">Die Software, die Ihr Kursangebot optimal
+                        verwaltet und
+                        buchbar macht.</h5>
+                    <button
+                        class="flex justify-center mx-auto my-7 items-center gap-2 border-4 bg-secondaryColor border-primaryColor w-full max-w-64 py-5 px-2 rounded-[30px] font-semibold">
+                        Zum Kursverwaltungs-Tool
+                        <img src="./assets/icons/arrow.svg" alt="Arrow Icon">
+                    </button>
+                </article>
+
+                <!-- Section for Companies -->
+                <article class="text-left my-5 w-full max-w-[420px] text-black">
+                    <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full mt-6 mb-5 font-semibold">
+                        Für Unternehmen
+                    </p>
+                    <h3 class="text-xl font-bold uppercase">
+                        INDIVIDUELL. INSPIRIEREND. WERTSCHÄTZEND.
+                    </h3>
+                    <h4 class="text-xl font-semibold">Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle
+                        Wertschätzung.
+                    </h4>
+                    <h5 class="text-xl text-left font-normal">
+                        Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.
+                    </h5>
+                    <button
+                        class="flex justify-center mx-auto my-7 items-center gap-2 border-4 bg-secondaryColor border-primaryColor w-full max-w-64 py-5 px-2 rounded-[30px] font-semibold">
+                        Zur Benefit-Plattform
+                        <img src="./assets/icons/arrow.svg" alt="Arrow Icon">
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex justify-end items-center gap-5 uppercase mx-20 transition-all">
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor">Kontakt</a>
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor">Cookie Einstellungen</a>
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor">Datenschutz</a>
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor">Impressum</a>
+    </footer>
 </body>
 
 </html>
