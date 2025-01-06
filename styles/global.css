@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 /* Global Styles */
 body {
@@ -33,7 +33,7 @@ html {
 
 /* Styling for header and footer */
 header {
-  height: 80px;
+  min-height: 80px;
 }
 
 footer {
