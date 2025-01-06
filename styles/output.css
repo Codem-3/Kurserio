@@ -586,6 +586,10 @@ video {
   z-index: 10;
 }
 
+.z-50{
+  z-index: 50;
+}
+
 .mx-20{
   margin-left: 5rem;
   margin-right: 5rem;
@@ -678,6 +682,10 @@ video {
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-5{
@@ -865,8 +873,12 @@ footer {
 
 /* Styling for hero section */
 
-.hero-section {
-  height: calc(100vh - 80px - 60px);
+.hero-landing {
+  height: calc(100vh - 140px);
+}
+
+.hero-course {
+  height: calc(100vh - 80px);
 }
 
 .overlay {

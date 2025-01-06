@@ -9,6 +9,7 @@
 * {
   /* outline: 1px solid red; */
 }
+
 /* Global Styles */
 body {
   font-family: "Fira Sans", serif;
@@ -41,8 +42,12 @@ footer {
 }
 
 /* Styling for hero section */
-.hero-section {
-  height: calc(100vh - 80px - 60px);
+.hero-landing {
+  height: calc(100vh - 140px);
+}
+
+.hero-course {
+  height: calc(100vh - 80px);
 }
 
 .overlay {
