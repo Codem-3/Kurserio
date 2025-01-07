@@ -655,6 +655,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -709,6 +714,14 @@ video {
 
 .max-w-\[500px\]{
   max-width: 500px;
+}
+
+.max-w-72{
+  max-width: 18rem;
+}
+
+.max-w-6{
+  max-width: 1.5rem;
 }
 
 .flex-col{
@@ -781,6 +794,10 @@ video {
 
 .rounded-\[30px\]{
   border-radius: 30px;
+}
+
+.rounded-\[40px\]{
+  border-radius: 40px;
 }
 
 .border-4{
@@ -1131,6 +1148,11 @@ footer {
     margin-right: 1.25rem;
   }
 
+  .md\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1170,6 +1192,11 @@ footer {
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:leading-relaxed{
@@ -1304,6 +1331,11 @@ footer {
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xl\:leading-relaxed{
