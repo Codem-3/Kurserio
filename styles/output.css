@@ -594,10 +594,6 @@ video {
   margin: 1.25rem;
 }
 
-.m-10{
-  margin: 2.5rem;
-}
-
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -646,10 +642,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -666,8 +658,8 @@ video {
   width: 50%;
 }
 
-.w-72{
-  width: 18rem;
+.w-60{
+  width: 15rem;
 }
 
 .w-full{
@@ -682,20 +674,16 @@ video {
   max-width: 420px;
 }
 
-.max-w-\[560px\]{
-  max-width: 560px;
-}
-
-.max-w-\[620px\]{
-  max-width: 620px;
-}
-
 .flex-col{
   flex-direction: column;
 }
 
 .flex-col-reverse{
   flex-direction: column-reverse;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -722,12 +710,12 @@ video {
   gap: 0.5rem;
 }
 
-.gap-20{
-  gap: 5rem;
-}
-
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
@@ -762,10 +750,6 @@ video {
   border-width: 15px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-primaryColor\/45{
   border-color: rgb(221 244 135 / 0.45);
 }
@@ -796,10 +780,6 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-10{
-  padding: 2.5rem;
 }
 
 .p-5{
@@ -854,20 +834,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-\[34px\]{
-  font-size: 34px;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -897,10 +863,6 @@ video {
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.leading-relaxed{
-  line-height: 1.625;
 }
 
 .text-black{
@@ -989,6 +951,12 @@ footer {
   height: calc(100vh - 80px);
 }
 
+@media (max-width: 1279px) {
+  .hero-course {
+    height: auto;
+  }
+}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -997,10 +965,29 @@ footer {
   text-decoration-line: underline;
 }
 
+@media (min-width: 410px){
+  .tiny\:gap-9{
+    gap: 2.25rem;
+  }
+
+  .tiny\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:mx-8{
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .sm\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:w-72{
+    width: 18rem;
   }
 
   .sm\:max-w-\[420px\]{
@@ -1025,6 +1012,11 @@ footer {
     line-height: 2rem;
   }
 
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1032,33 +1024,143 @@ footer {
 }
 
 @media (min-width: 768px){
+  .md\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:gap-20{
+    gap: 5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:leading-relaxed{
+    line-height: 1.625;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:m-10{
+    margin: 2.5rem;
+  }
+
+  .lg\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .lg\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
+  .lg\:p-10{
+    padding: 2.5rem;
   }
 
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[34px\]{
+    font-size: 34px;
+  }
+
+  .lg\:leading-relaxed{
+    line-height: 1.625;
+  }
 }
 
 @media (min-width: 1280px){
+  .xl\:m-0{
+    margin: 0px;
+  }
+
+  .xl\:max-w-\[560px\]{
+    max-width: 560px;
+  }
+
+  .xl\:max-w-\[620px\]{
+    max-width: 620px;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:gap-0{
+    gap: 0px;
+  }
+
+  .xl\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:text-left{
+    text-align: left;
+  }
+
   .xl\:text-5xl{
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem;
     line-height: 1;
   }
 
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:leading-relaxed{
+    line-height: 1.625;
   }
 }
 

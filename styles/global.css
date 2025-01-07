@@ -50,6 +50,12 @@ footer {
   height: calc(100vh - 80px);
 }
 
+@media (max-width: 1279px) {
+  .hero-course {
+    height: auto;
+  }
+}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
