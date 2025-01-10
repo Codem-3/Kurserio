@@ -11,83 +11,77 @@
 
 <body class="h-screen">
     <!-- Header -->
-    <header
-        class="flex flex-col-reverse gap-5 sm:flex-row py-3 sm:py-0 justify-between items-center px-5 lg:px-20 uppercase">
+    <header class="flex flex-col-reverse gap-5 sm:flex-row py-3 sm:py-0 justify-between items-center px-5 lg:px-20">
         <!-- Logo Icon -->
         <img src="./assets/images/Logo.svg" alt="Kurserio Icon">
         <!-- Navigation -->
-        <nav class="flex justify-center items-center gap-9 font-semibold">
+        <nav class="flex justify-center items-center gap-9">
             <a href="./pages/course-providers.html"
                 class="underline underline-offset-4 decoration-primaryColor decoration-2">
                 Für Kursanbietende
             </a>
             <a href="./pages/companies.html"
-                class="underline underline-offset-4 decoration-primaryColor decoration-2">Für Unternehmen</a>
+                class="underline underline-offset-4 decoration-secondaryColor decoration-2">
+                Für Unternehmen
+            </a>
+            <a href="./pages/companies.html" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
+                Kostenlose Demo
+            </a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-landing bg-heroSection text-center relative shadow-inner">
         <!-- Video Background -->
-        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-1/2 h-full object-cover z-0">
-            <source src="./assets/images/forLanding/hero.mp4" type="video/mp4">
-            <source src="path-to-your-video.webm" type="video/webm">
-            Your browser does not support video playback.
-        </video>
-        <!-- Video Background -->
-        <video autoplay muted loop playsinline class="absolute top-0 right-0 w-1/2 h-full object-cover z-0">
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
             <source src="./assets/images/forLanding/hero.mp4" type="video/mp4">
             <source src="path-to-your-video.webm" type="video/webm">
             Your browser does not support video playback.
         </video>
 
         <!-- Content -->
-        <div class="relative z-10 py-20">
-            <h1 class="text-xl sm:text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-semibold uppercase text-nowrap">
-                Effiziente &
-                INTUITIVE Lösungen</h1>
-            <h2 class="text-xl sm:text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-semibold uppercase text-nowrap">
-                für Kursanbietende <span class="mx-4 sm:mx-8">und</span> FÜR Unternehmen
-            </h2>
+        <div class="relative z-10 py-12">
+            <h1 class="text-xl sm:text-2xl text-left md:text-5xl font-semibold text-nowrap mx-5 lg:mx-20">
+                Effiziente & intuitive Lösungen <br>
+                für Kursanbietende und für Unternehmen
+            </h1>
 
-            <div class="flex justify-around gap-6 sm:gap-20 mx-5 lg:mx-20">
+            <div class="flex justify-between gap-6 sm:gap-20 mx-5 lg:mx-20">
                 <!-- Section for Course Providers -->
-                <article class="text-left my-5 w-full sm:max-w-[420px] text-black">
-                    <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full mt-6 mb-5 font-semibold">Für
-                        Kursanbietende
+                <article class="text-left my-5 w-full sm:max-w-[535px] text-black">
+                    <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
+                        Für Kursanbietende
                     </p>
-                    <h3 class="xl:text-xl font-bold uppercase">FLEXIBEL. EINFACH. kundennah.</h3>
-                    <h4 class="xl:text-xl font-semibold">Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre
-                        Leidenschaft
+                    <h3 class="xl:text-xl font-semibold">Flexibel. Einfach. Kundennah.</h3>
+                    <h4 class="xl:text-xl font-semibold my-3">
+                        Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.
                     </h4>
-                    <h5 class="xl:text-xl text-left font-normal">Die Software, die Ihr Kursangebot optimal
-                        verwaltet und
-                        buchbar macht.</h5>
+                    <h5 class="xl:text-xl text-left font-normal">
+                        Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.
+                    </h5>
                     <button
-                        class="flex justify-center text-sm sm:text-base mx-auto my-7 items-center gap-2 border-4 bg-secondaryColor/95 border-primaryColor/95 w-full max-w-64 py-5 px-2 rounded-[30px] font-semibold">
-                        Zum Kursverwaltungs-Tool
-                        <img src="./assets/icons/arrow.svg" alt="Arrow Icon">
+                        class="relative flex justify-center text-sm sm:text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor/95 border-primaryColor/95 w-full max-w-56 py-2 rounded-full">
+                        Kurs-Tool <br>entdecken
+                        <img src="./assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
                     </button>
                 </article>
 
                 <!-- Section for Companies -->
-                <article class="text-left my-5 w-full max-w-[420px] text-black">
-                    <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full mt-6 mb-5 font-semibold">
+                <article class="text-left my-5 w-full sm:max-w-[535px] text-black">
+                    <p class="bg-secondaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
                         Für Unternehmen
                     </p>
-                    <h3 class="xl:text-xl font-bold uppercase">
-                        INDIVIDUELL. INSPIRIEREND. WERTSCHÄTZEND.
-                    </h3>
-                    <h4 class="xl:text-xl font-semibold">Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle
-                        Wertschätzung.
+                    <h3 class="xl:text-xl font-semibold">Individuell. Inspirierend. Begeisternd.</h3>
+                    <h4 class="xl:text-xl font-semibold my-3">
+                        Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.
                     </h4>
                     <h5 class="xl:text-xl text-left font-normal">
                         Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.
                     </h5>
                     <button
-                        class="flex justify-center mx-auto my-7 items-center gap-2 border-4 bg-secondaryColor/95 border-primaryColor/95 w-full max-w-64 py-5 px-2 rounded-[30px] font-semibold">
-                        Zur Benefit-Plattform
-                        <img src="./assets/icons/arrow.svg" alt="Arrow Icon">
+                        class="relative flex justify-center text-sm sm:text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor/95 border-secondaryColor/95 w-full max-w-56 py-2 rounded-full">
+                        Benefit-Plattform <br>entdecken
+                        <img src="./assets/icons/arrowBlue.svg" alt="Arrow Icon" class="absolute right-0">
                     </button>
                 </article>
             </div>
@@ -95,7 +89,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="flex justify-end items-center gap-5 uppercase mx-20 transition-all">
+    <footer class="flex justify-end items-center gap-5 mx-20 transition-all">
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Kontakt</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Cookie Einstellungen</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Datenschutz</a>

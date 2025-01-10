@@ -4,8 +4,9 @@ module.exports = {
         extend: {
             colors: {
                 primaryColor: "#ddf487", // Custom primary color
-                secondaryColor: "#ebded4", // Custom secondary color
-                thirdlyColor: "#b2aea0", // Custom third color
+                secondaryColor: "#bec4ed", // Custom primary color
+                thirdlyColor: "#ebded4", // Custom secondary color
+                fourthlyColor: "#b2aea0", // Custom third color
             },
             screens: {
                 'vsm': '460px',  // Breakpoint for very small screens
