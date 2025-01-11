@@ -9,8 +9,8 @@
     <title>Kurserio Für Kursanbietende</title>
 </head>
 
-<body class="h-screen">
-    <!-- Header -->
+<body>
+    <!-- Header Section -->
     <header
         class="flex flex-col-reverse xl:flex-row gap-5 justify-between items-center m-5 xl:m-0 xl:px-20 text-sm tiny:text-base">
         <div class="flex flex-col-reverse md:flex-row md:gap-20 items-center">
@@ -19,15 +19,9 @@
             </a>
         </div>
         <nav class="flex justify-center items-center gap-9">
-            <a href="#" class="underline underline-offset-4 decoration-primaryColor decoration-2">
-                Funktionen
-            </a>
-            <a href="#" class="underline underline-offset-4 decoration-primaryColor decoration-2">
-                Preise
-            </a>
-            <a href="#" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
-                Kostenlose Demo
-            </a>
+            <a href="#" class="underline underline-offset-4 decoration-primaryColor decoration-2">Funktionen</a>
+            <a href="#" class="underline underline-offset-4 decoration-primaryColor decoration-2">Preise</a>
+            <a href="#" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">Kostenlose Demo</a>
         </nav>
     </header>
 
@@ -86,8 +80,8 @@
                 <h1 class="text-lg font-semibold w-full my-2">Kurserio Studio - Das Kurs-Tool</h1>
                 <p class="text-2xl lg:leading-relaxed text-center xl:text-left">
                     Von der Buchung bis zur Bestätigung: Alles, was du brauchst, um dein Angebot professionell zu
-                    managen und Kunden zu
-                    begeistern.
+                    managen
+                    und Kunden zu begeistern.
                 </p>
                 <button
                     class="relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-52 py-3 rounded-full font-semibold">
@@ -100,31 +94,31 @@
         </div>
     </section>
 
-    <!-- Some Icons -->
-    <section class="flex justify-center items-center gap-5 p-10 text-lg">
-
+    <!-- Some Icons Section -->
+    <section class="flex justify-around items-center p-10 text-lg">
         <!-- Organisation erleichtern -->
-        <span>
-            <img src="" alt="Organisation erleichtern">
+        <span class="flex flex-col justify-start items-center gap-3">
+            <img src="../assets/icons/person.png" alt="Organisation erleichtern">
             <p>Organisation erleichtern</p>
         </span>
 
         <!-- Zeit sparen -->
-        <span>
-            <img src="" alt="Zeit sparen">
+        <span class="flex flex-col justify-start items-center gap-3">
+            <img src="../assets/icons/clock.png" alt="Zeit sparen">
             <p>Zeit sparen</p>
         </span>
 
-        <span>
-            <img src="" alt="Zufriedene Kunden">
+        <!-- Zufriedene Kunden -->
+        <span class="flex flex-col justify-start items-center gap-3">
+            <img src="../assets/icons/support.png" alt="Zufriedene Kunden">
             <p>Zufriedene Kunden</p>
         </span>
 
-        <span>
-            <img src="" alt="Mehr Buchungen">
+        <!-- Mehr Buchungen -->
+        <span class="flex flex-col justify-start items-center gap-3">
+            <img src="../assets/icons/lamb.png" alt="Mehr Buchungen">
             <p>Mehr Buchungen</p>
         </span>
-
     </section>
 
     <!-- Features Section -->
@@ -135,24 +129,18 @@
 
         <!-- Sections for Different Features -->
         <section class="flex flex-col justify-center items-center gap-10 ">
-
             <!-- Deine Angebote -->
-            <!-- Navigation Section -->
-            <nav class="flex w-full flex-wrap mt-10 gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <a href="#Deine"
-                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+            <!-- Navigation -->
+            <div class="flex w-full flex-wrap mt-10 gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
                     Deine Angebote
-                </a>
-                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
-                    Buchen</a>
-                <a href="#Buchungsübersicht"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
-                <a href="#Kommunikation"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
-                    Kommunikation</a>
-                <a href="#Team"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
-            </nav>
+                </p>
+                <p>Online Buchen</p>
+                <p>Verwalten</p>
+                <p>Automatische Kommunikation</p>
+                <p>Team/Standorte</p>
+            </div>
+            <!-- Article -->
             <article
                 class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
                 id="Deine">
@@ -161,8 +149,7 @@
                     <h1 class="text-3xl sm:text-5xl font-semibold my-2">Intuitive Verwaltung</h1>
                     <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
                         Einfaches anbieten deiner Kurse, Workshops, Trainings, Vorträge und vielem mehr. Erstelle
-                        ansprechende Beschreibungen,
-                        füge Coaches hinzu, lade Bilder hoch und lege Termine fest.
+                        ansprechende Beschreibungen, füge Coaches hinzu, lade Bilder hoch und lege Termine fest.
                     </p>
                     <ul class="list-disc p-5">
                         <li>Übersichtlicher und ästhetischer Onlineauftritt</li>
@@ -174,32 +161,27 @@
             </article>
 
             <!-- Online Buchen -->
-            <!-- Navigation Section -->
-            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">
-                    Deine Angebote
-                </a>
-                <a href="#Online"
-                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">Online
-                    Buchen</a>
-                <a href="#Buchungsübersicht"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
-                <a href="#Kommunikation"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
-                    Kommunikation</a>
-                <a href="#Team"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
-            </nav>
+            <!-- Navigation -->
+            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <p>Deine Angebote</p>
+                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+                    Online Buchen
+                </p>
+                <p>Verwalten</p>
+                <p>Automatische Kommunikation</p>
+                <p>Team/Standorte</p>
+            </div>
+            <!-- Article -->
             <article
                 class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
-                id="Deine">
+                id="Online">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Online Buchen</p>
                     <h1 class="text-3xl sm:text-5xl font-semibold my-2 max-w-[500px]">Weniger Aufwand – mehr Kunden</h1>
                     <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
                         Hindernisse für Kundenbuchungen abbauen: Direkte Buchung und alternative Termine machen den
-                        Unterschied. Vorteil: Freie
-                        Plätze werden schneller gefüllt, weil die Buchung für deine Kunden mühelos ist.
+                        Unterschied. Vorteil: Freie Plätze werden schneller gefüllt, weil die Buchung für deine Kunden
+                        mühelos ist.
                     </p>
                     <ul class="list-disc p-5">
                         <li>Kunden buchen direkt auf Website</li>
@@ -210,31 +192,27 @@
             </article>
 
             <!-- Verwalten -->
-            <!-- Navigation Section -->
-            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">
-                    Deine Angebote
-                </a>
-                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
-                    Buchen</a>
-                <a href="#Buchungsübersicht"
-                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">Verwalten</a>
-                <a href="#Kommunikation"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
-                    Kommunikation</a>
-                <a href="#Team"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
-            </nav>
+            <!-- Navigation -->
+            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <p>Deine Angebote</p>
+                <p>Online Buchen</p>
+                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+                    Verwalten
+                </p>
+                <p>Automatische Kommunikation</p>
+                <p>Team/Standorte</p>
+            </div>
+            <!-- Article -->
             <article
                 class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
-                id="Deine">
+                id="Verwalten">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Verwalten</p>
                     <h1 class="text-3xl sm:text-5xl font-semibold my-2">Strukturierte Buchungsübersicht</h1>
                     <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
                         Behalte alle Kurse und Buchungen auf einen Blick – intuitiv und professionell. Vorteil: Ein
-                        voller Kurskalender, der
-                        sich von selbst organisiert – kein zusätzlicher Aufwand nötig.
+                        voller
+                        Kurskalender, der sich von selbst organisiert – kein zusätzlicher Aufwand nötig.
                     </p>
                     <ul class="list-disc p-5">
                         <li>Übersicht über Kursbuchungen</li>
@@ -244,33 +222,28 @@
                 <img src="../assets/images/forCourse/image4.png" alt="Kurserio Image 2">
             </article>
 
-            <!-- Kommunikation -->
-            <!-- Navigation Section -->
-            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <a href="#Deine"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2 text-black">
-                    Deine Angebote
-                </a>
-                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
-                    Buchen</a>
-                <a href="#Verwalten"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
-                <a href="#Kommunikation"
-                    class="underline underline-offset-4 decoration-primaryColor decoration-2 font-semibold">Automatische
-                    Kommunikation</a>
-                <a href="#Team"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
-            </nav>
+            <!-- Automatische Kommunikation -->
+            <!-- Navigation -->
+            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <p>Deine Angebote</p>
+                <p>Online Buchen</p>
+                <p>Verwalten</p>
+                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+                    Automatische Kommunikation
+                </p>
+                <p>Team/Standorte</p>
+            </div>
+            <!-- Article -->
             <article
                 class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
-                id="Deine">
+                id="Kommunikation">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Automatische Kommunikation</p>
                     <h1 class="text-3xl sm:text-5xl font-semibold my-2">Kunden lieben es</h1>
                     <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
                         Automatische Erinnerungen und Bestätigungen reduzieren Absagen und sparen Zeit. Zudem verbessern
-                        Sie die Zufriedenheit
-                        Ihrer Kunden – ohne manuelles Nachhaken.
+                        Sie
+                        die Zufriedenheit Ihrer Kunden – ohne manuelles Nachhaken.
                     </p>
                     <ul class="list-disc p-5">
                         <li>Automatische Buchungsbestätigungen</li>
@@ -281,31 +254,27 @@
             </article>
 
             <!-- Team und Standorte -->
-            <!-- Navigation Section -->
-            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">
-                    Deine Angebote
-                </a>
-                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
-                    Buchen</a>
-                <a href="#Verwalten"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
-                <a href="#Kommunikation"
-                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
-                    Kommunikation</a>
-                <a href="#Team"
-                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">Team/Standorte</a>
-            </nav>
+            <!-- Navigation -->
+            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <p>Deine Angebote</p>
+                <p>Online Buchen</p>
+                <p>Verwalten</p>
+                <p>Automatische Kommunikation</p>
+                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+                    Team/Standorte
+                </p>
+            </div>
+            <!-- Article -->
             <article
                 class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
-                id="Deine">
+                id="Team">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Team und Standorte</p>
                     <h1 class="text-3xl sm:text-5xl font-semibold my-2">Team Work</h1>
                     <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
                         Dein Team erhält persönliche Zugänge und kann Kurse selbst einstellen und verwalten. Mehrere
-                        Standorte können bei Bedarf
-                        problemlos im Tool verwaltet werden. Für einen effizienten und reibungslosen Arbeitsalltag.
+                        Standorte können bei Bedarf problemlos im Tool verwaltet werden. Für einen effizienten und
+                        reibungslosen Arbeitsalltag.
                     </p>
                     <ul class="list-disc p-5">
                         <li>Flexible Rollenvergabe</li>
@@ -317,7 +286,7 @@
         </section>
     </section>
 
-    <!-- Qestions About Our Features Section -->
+    <!-- Questions About Our Features Section -->
     <section class="p-5 lg:p-10">
         <h1 class="text-2xl md:text-3xl text-center my-3">
             Du hast noch Fragen zu unseren Funktionen?

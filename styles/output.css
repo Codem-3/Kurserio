@@ -566,10 +566,6 @@ video {
   position: relative;
 }
 
-.-right-4{
-  right: -1rem;
-}
-
 .left-0{
   left: 0px;
 }
@@ -578,16 +574,12 @@ video {
   right: 0px;
 }
 
-.top-0{
-  top: 0px;
-}
-
-.top-1{
-  top: 0.25rem;
-}
-
 .right-1{
   right: 0.25rem;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .z-0{
@@ -604,11 +596,6 @@ video {
 
 .m-5{
   margin: 1.25rem;
-}
-
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mx-20{
@@ -651,19 +638,9 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-7{
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .mb-5{
@@ -690,15 +667,6 @@ video {
   width: 15rem;
 }
 
-.w-72{
-  width: 18rem;
-}
-
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-full{
   width: 100%;
 }
@@ -713,10 +681,6 @@ video {
 
 .max-w-72{
   max-width: 18rem;
-}
-
-.max-w-80{
-  max-width: 20rem;
 }
 
 .max-w-\[500px\]{
@@ -795,12 +759,12 @@ video {
   gap: 1.5rem;
 }
 
-.gap-7{
-  gap: 1.75rem;
-}
-
 .gap-9{
   gap: 2.25rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .text-nowrap{
@@ -809,10 +773,6 @@ video {
 
 .rounded-3xl{
   border-radius: 1.5rem;
-}
-
-.rounded-\[40px\]{
-  border-radius: 40px;
 }
 
 .rounded-full{
@@ -853,10 +813,6 @@ video {
 .bg-\[\#e7dfd8\]{
   --tw-bg-opacity: 1;
   background-color: rgb(231 223 216 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#e7dfd8\]\/50{
-  background-color: rgb(231 223 216 / 0.5);
 }
 
 .bg-\[\#f4f4f4\]{
@@ -901,15 +857,6 @@ video {
   padding: 1.25rem;
 }
 
-.p-6{
-  padding: 1.5rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -943,16 +890,6 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 .text-left{
@@ -991,10 +928,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .font-medium{
@@ -1077,13 +1010,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
-
-::-webkit-scrollbar {
-  width: 0px;
-  /* Hide scrollbar */
-}
-
 /* Styling for header and footer */
 
 header {
@@ -1092,6 +1018,12 @@ header {
 
 footer {
   height: 40px;
+}
+
+/* Hide scrollbar */
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 /* Styling for hero section */
@@ -1104,10 +1036,6 @@ footer {
   .hero-course {
     height: auto;
   }
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hover\:underline:hover{
@@ -1133,10 +1061,6 @@ footer {
 }
 
 @media (min-width: 640px){
-  .sm\:-right-2{
-    right: -0.5rem;
-  }
-
   .sm\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -1157,10 +1081,6 @@ footer {
     gap: 5rem;
   }
 
-  .sm\:gap-5{
-    gap: 1.25rem;
-  }
-
   .sm\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1169,11 +1089,6 @@ footer {
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .sm\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .sm\:text-5xl{
@@ -1193,11 +1108,6 @@ footer {
 }
 
 @media (min-width: 768px){
-  .md\:my-10{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1206,19 +1116,9 @@ footer {
     gap: 5rem;
   }
 
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-5xl{
@@ -1275,16 +1175,6 @@ footer {
 
   .xl\:text-left{
     text-align: left;
-  }
-
-  .xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .xl\:text-xl{

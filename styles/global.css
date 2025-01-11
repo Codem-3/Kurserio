@@ -22,12 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 0px;
-  /* Hide scrollbar */
-}
-
 /* Styling for header and footer */
 header {
   min-height: 80px;
@@ -35,6 +29,11 @@ header {
 
 footer {
   height: 40px;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 /* Styling for hero section */
@@ -46,8 +45,4 @@ footer {
   .hero-course {
     height: auto;
   }
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
 }
