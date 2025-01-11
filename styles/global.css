@@ -42,10 +42,6 @@ footer {
   height: calc(100vh - 120px);
 }
 
-.hero-course {
-  height: calc(100vh - 80px);
-}
-
 @media (max-width: 1279px) {
   .hero-course {
     height: auto;
