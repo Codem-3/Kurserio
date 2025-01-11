@@ -84,13 +84,13 @@
         <div class="flex flex-col-reverse xl:flex-row gap-5 xl:gap-0 justify-around items-center">
             <div class="flex flex-col justify-center items-center text-left xl:max-w-[560px]">
                 <h1 class="text-lg font-semibold w-full my-2">Kurserio Studio - Das Kurs-Tool</h1>
-                <p class="text-xl lg:leading-relaxed text-center xl:text-left">
+                <p class="text-2xl lg:leading-relaxed text-center xl:text-left">
                     Von der Buchung bis zur Bestätigung: Alles, was du brauchst, um dein Angebot professionell zu
                     managen und Kunden zu
                     begeistern.
                 </p>
                 <button
-                    class="relative flex justify-center text-sm sm:text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-52 py-2 rounded-full font-semibold">
+                    class="relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-52 py-3 rounded-full font-semibold">
                     Kostenlose Demo
                     <img src="../assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
                 </button>
@@ -132,252 +132,205 @@
         <h1 class="text-lg md:text-3xl text-center font-semibold my-3">
             Effizientes Management leicht gemacht - mit Funktionen die den Alltag erleichtern
         </h1>
-    </section>
 
-    <!-- Navigation Section -->
-    <nav
-        class="flex flex-wrap gap-5 justify-center lg:justify-between items-center font-semibold p-10 text-sm tiny:text-base">
-        <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2 text-black">
-            Deine Angebote
-        </a>
-        <a href="#Online" class="underline underline-offset-4 decoration-primaryColor decoration-2">Online Buchen</a>
-        <a href="#Buchungsübersicht"
-            class="underline underline-offset-4 decoration-primaryColor decoration-2">Buchungsübersicht</a>
-        <a href="#Kommunikation" class="underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
-            Kommunikation</a>
-        <a href="#Team" class="underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
-    </nav>
+        <!-- Sections for Different Features -->
+        <section class="flex flex-col justify-center items-center gap-10 ">
 
-    <!-- Sections for Different Features -->
-    <section class="flex flex-col justify-center items-center gap-10 m-5 md:m-10">
-        <!-- Deine Angebote -->
-        <article class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-3xl md:px-5"
-            id="Deine">
-            <div class="py-5 p-2 vsm:p-5">
-                <p class="text-lg sm:text-xl font-semibold uppercase">Deine Angebote</p>
-                <h1 class="text-3xl sm:text-5xl font-semibold my-2 uppercase">Intuitive Verwaltung</h1>
-                <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
-                    Einfache Verwaltung deiner Kurse, Workshops, Trainings, Vorträge und vielem mehr. Erstelle
-                    ansprechende Beschreibungen, füge Coaches hinzu, lade Bilder hoch und lege Termine fest. Ein
-                    übersichtlicher und ästhetischer Onlineauftritt, der überzeugt. Direkt in deiner Website oder lasse
-                    dir einfach eine Seite von uns erstellen.
-                </p>
-            </div>
-            <img src="../assets/images/forCourse/image2.png" alt="Kurserio Image 2">
-        </article>
+            <!-- Deine Angebote -->
+            <!-- Navigation Section -->
+            <nav class="flex w-full flex-wrap mt-10 gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <a href="#Deine"
+                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+                    Deine Angebote
+                </a>
+                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
+                    Buchen</a>
+                <a href="#Buchungsübersicht"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
+                <a href="#Kommunikation"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
+                    Kommunikation</a>
+                <a href="#Team"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
+            </nav>
+            <article
+                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                id="Deine">
+                <div class="py-5 p-2 vsm:p-5">
+                    <p class="text-lg sm:text-xl font-semibold">Deine Angebote</p>
+                    <h1 class="text-3xl sm:text-5xl font-semibold my-2">Intuitive Verwaltung</h1>
+                    <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
+                        Einfaches anbieten deiner Kurse, Workshops, Trainings, Vorträge und vielem mehr. Erstelle
+                        ansprechende Beschreibungen,
+                        füge Coaches hinzu, lade Bilder hoch und lege Termine fest.
+                    </p>
+                    <ul class="list-disc p-5">
+                        <li>Übersichtlicher und ästhetischer Onlineauftritt</li>
+                        <li>Direkt auf deiner Website</li>
+                        <li>Nach Wahl Websiteerstellung</li>
+                    </ul>
+                </div>
+                <img src="../assets/images/forCourse/image2.png" alt="Kurserio Image 2">
+            </article>
 
-        <!-- Online Buchen -->
-        <article class="flex flex-col-reverse xl:flex-row justify-between w-full bg-[#f4f4f4] rounded-3xl" id="Online">
-            <div class="py-5 p-2 vsm:p-5">
-                <p class="text-lg sm:text-xl font-semibold uppercase">Online Buchen</p>
-                <h1 class="text-3xl sm:text-5xl font-semibold my-2 uppercase">Weniger Aufwand – Mehr Kunden</h1>
-                <p class="vsm:text-lg sm:text-xl">
-                    Hindernisse für Kundenbuchungen abbauen: Direkte Buchung und alternative Termine machen den
-                    Unterschied. Vorteil: Freie Plätze werden schneller gefüllt, weil die Buchung für deine Kunden
-                    mühelos ist. Durch die Wartelisten-Funktion verlierst du keine potenziellen Kunden.
-                </p>
-                <img src="../assets/images/forCourse/book.png" alt="Kurserio Book" class="mx-auto">
-            </div>
-            <img src="../assets/images/forCourse/image3.png" alt="Kurserio Image 3">
-        </article>
+            <!-- Online Buchen -->
+            <!-- Navigation Section -->
+            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">
+                    Deine Angebote
+                </a>
+                <a href="#Online"
+                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">Online
+                    Buchen</a>
+                <a href="#Buchungsübersicht"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
+                <a href="#Kommunikation"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
+                    Kommunikation</a>
+                <a href="#Team"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
+            </nav>
+            <article
+                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                id="Deine">
+                <div class="py-5 p-2 vsm:p-5">
+                    <p class="text-lg sm:text-xl font-semibold">Online Buchen</p>
+                    <h1 class="text-3xl sm:text-5xl font-semibold my-2 max-w-[500px]">Weniger Aufwand – mehr Kunden</h1>
+                    <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
+                        Hindernisse für Kundenbuchungen abbauen: Direkte Buchung und alternative Termine machen den
+                        Unterschied. Vorteil: Freie
+                        Plätze werden schneller gefüllt, weil die Buchung für deine Kunden mühelos ist.
+                    </p>
+                    <ul class="list-disc p-5">
+                        <li>Kunden buchen direkt auf Website</li>
+                        <li>Wartelisten Funktion</li>
+                    </ul>
+                </div>
+                <img src="../assets/images/forCourse/image3.png" alt="Kurserio Image 2">
+            </article>
 
-        <!-- Buchungsübersicht -->
-        <article class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-3xl md:px-5"
-            id="Buchungsübersicht">
-            <div class="py-5 p-2 vsm:p-5">
-                <p class="text-lg sm:text-xl font-semibold uppercase">Buchungsübersicht</p>
-                <h1 class="text-3xl sm:text-5xl font-semibold my-2 uppercase">Strukturierte Koordination</h1>
-                <p class="vsm:text-lg sm:text-xl">
-                    Behalte alle Kurse und Buchungen auf einen Blick – intuitiv und professionell und erstelle
-                    automatisch Rechnungen. Vorteil: Ein voller Kurskalender, der sich von selbst organisiert – kein
-                    zusätzlicher Aufwand nötig. Profitiere von dem Einblick in die Kursbuchungen, um zu wissen welche
-                    Kurse bei deinen Kunden beliebt sind.
-                </p>
-            </div>
-            <img src="../assets/images/forCourse/image4.png" alt="Kurserio Image 4">
-        </article>
+            <!-- Verwalten -->
+            <!-- Navigation Section -->
+            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">
+                    Deine Angebote
+                </a>
+                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
+                    Buchen</a>
+                <a href="#Buchungsübersicht"
+                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">Verwalten</a>
+                <a href="#Kommunikation"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
+                    Kommunikation</a>
+                <a href="#Team"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
+            </nav>
+            <article
+                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                id="Deine">
+                <div class="py-5 p-2 vsm:p-5">
+                    <p class="text-lg sm:text-xl font-semibold">Verwalten</p>
+                    <h1 class="text-3xl sm:text-5xl font-semibold my-2">Strukturierte Buchungsübersicht</h1>
+                    <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
+                        Behalte alle Kurse und Buchungen auf einen Blick – intuitiv und professionell. Vorteil: Ein
+                        voller Kurskalender, der
+                        sich von selbst organisiert – kein zusätzlicher Aufwand nötig.
+                    </p>
+                    <ul class="list-disc p-5">
+                        <li>Übersicht über Kursbuchungen</li>
+                        <li>Automatische Rechnungserstellung</li>
+                    </ul>
+                </div>
+                <img src="../assets/images/forCourse/image4.png" alt="Kurserio Image 2">
+            </article>
 
-        <!-- Kommunikation -->
-        <article class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-3xl md:px-5"
-            id="Kommunikation">
-            <div class="relative py-5 p-2 vsm:p-5">
-                <p class="text-lg sm:text-xl font-semibold uppercase">Kommunikation</p>
-                <h1 class="text-3xl sm:text-5xl font-semibold my-2 uppercase">Automatische Kommunikation</h1>
-                <p class="vsm:text-lg sm:text-xl">
-                    Automatische Erinnerungen und Bestätigungen reduzieren Absagen und sparen Zeit. Vorteil: Reduzieren
-                    Sie Absagen und verbessern Sie die Zufriedenheit Ihrer Kunden – ohne manuelles Nachhaken.
-                </p>
-                <img src="../assets/images/forCourse/email.png" alt="Kurserio Email" class="my-2 xl:absolute -right-20">
-            </div>
-            <img src="../assets/images/forCourse/image5.png" alt="Kurserio Image 5">
-        </article>
+            <!-- Kommunikation -->
+            <!-- Navigation Section -->
+            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <a href="#Deine"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2 text-black">
+                    Deine Angebote
+                </a>
+                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
+                    Buchen</a>
+                <a href="#Verwalten"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
+                <a href="#Kommunikation"
+                    class="underline underline-offset-4 decoration-primaryColor decoration-2 font-semibold">Automatische
+                    Kommunikation</a>
+                <a href="#Team"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Team/Standorte</a>
+            </nav>
+            <article
+                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                id="Deine">
+                <div class="py-5 p-2 vsm:p-5">
+                    <p class="text-lg sm:text-xl font-semibold">Automatische Kommunikation</p>
+                    <h1 class="text-3xl sm:text-5xl font-semibold my-2">Kunden lieben es</h1>
+                    <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
+                        Automatische Erinnerungen und Bestätigungen reduzieren Absagen und sparen Zeit. Zudem verbessern
+                        Sie die Zufriedenheit
+                        Ihrer Kunden – ohne manuelles Nachhaken.
+                    </p>
+                    <ul class="list-disc p-5">
+                        <li>Automatische Buchungsbestätigungen</li>
+                        <li>Information über freie Plätze</li>
+                    </ul>
+                </div>
+                <img src="../assets/images/forCourse/image5.png" alt="Kurserio Image 2">
+            </article>
 
-        <!-- Team und Standorte -->
-        <article class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-3xl md:px-5"
-            id="Team">
-            <div class="py-5 p-2 vsm:p-5">
-                <p class="text-lg sm:text-xl font-semibold uppercase">Team und Standorte</p>
-                <h1 class="text-3xl sm:text-5xl font-semibold my-2 uppercase">Team Work</h1>
-                <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
-                    Dein Team erhält persönliche Zugänge und kann Kurse selbst einstellen und verwalten. Mehrere
-                    Standorte können bei Bedarf problemlos im Tool verwaltet werden. Für einen effizienten und
-                    reibungslosen Arbeitsalltag.
-                </p>
-            </div>
-            <img src="../assets/images/forCourse/image6.png" alt="Kurserio Image 6">
-        </article>
+            <!-- Team und Standorte -->
+            <!-- Navigation Section -->
+            <nav class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
+                <a href="#Deine" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">
+                    Deine Angebote
+                </a>
+                <a href="#Online" class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Online
+                    Buchen</a>
+                <a href="#Verwalten"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Verwalten</a>
+                <a href="#Kommunikation"
+                    class="hover:underline underline-offset-4 decoration-primaryColor decoration-2">Automatische
+                    Kommunikation</a>
+                <a href="#Team"
+                    class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">Team/Standorte</a>
+            </nav>
+            <article
+                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                id="Deine">
+                <div class="py-5 p-2 vsm:p-5">
+                    <p class="text-lg sm:text-xl font-semibold">Team und Standorte</p>
+                    <h1 class="text-3xl sm:text-5xl font-semibold my-2">Team Work</h1>
+                    <p class="vsm:text-lg sm:text-xl xl:max-w-[600px]">
+                        Dein Team erhält persönliche Zugänge und kann Kurse selbst einstellen und verwalten. Mehrere
+                        Standorte können bei Bedarf
+                        problemlos im Tool verwaltet werden. Für einen effizienten und reibungslosen Arbeitsalltag.
+                    </p>
+                    <ul class="list-disc p-5">
+                        <li>Flexible Rollenvergabe</li>
+                        <li>Anlegen verschiedener Standorte</li>
+                    </ul>
+                </div>
+                <img src="../assets/images/forCourse/image6.png" alt="Kurserio Image 2">
+            </article>
+        </section>
     </section>
 
     <!-- Qestions About Our Features Section -->
-    <section class="bg-[#f4f4f4] p-5 lg:p-10">
-        <h1 class="text-2xl md:text-4xl xl:text-5xl text-center font-semibold uppercase my-3">
-            Du hast noch fragen zu unseren funktionen?
+    <section class="p-5 lg:p-10">
+        <h1 class="text-2xl md:text-3xl text-center my-3">
+            Du hast noch Fragen zu unseren Funktionen?
         </h1>
         <button
-            class="flex justify-center text-sm sm:text-base mx-auto my-7 items-center gap-2 border-4 bg-secondaryColor  border-primaryColor  w-full max-w-72 py-5 px-2 rounded-[40px] font-semibold">
+            class="relative flex text-center mx-auto my-7 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor  w-full max-w-72 py-5 rounded-full">
             Buche ein persönliches Beratungsgespräch
-            <img src="../assets/icons/arrow.svg" alt="Arrow Icon">
+            <img src="../assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-1">
         </button>
-        <h1 class="text-2xl md:text-4xl xl:text-5xl text-center font-semibold uppercase my-3">Wir nehmen uns gerne zeit
-            für dich.</h1>
-    </section>
-
-    <!-- Faire Preise Section -->
-    <section class="my-5 md:my-10">
-        <h1 class="text-2xl md:text-4xl xl:text-5xl text-center font-semibold uppercase my-3">
-            Faire preise - dein preis richtet sich nach deinen buchungen
+        <h1 class="text-2xl md:text-3xl text-center my-3">
+            Wir nehmen uns gerne Zeit für dich.
         </h1>
-
-        <h2 class="text-xl md:text-2xl xl:text-3xl text-center font-semibold uppercase my-6">
-            Deine Funktionen im Überblick
-        </h2>
-
-        <!-- Container for features -->
-        <div class="flex flex-wrap justify-center gap-7 mx-10 items-center">
-
-            <!-- Feature Item: Online Angebote -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Online Angebote
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Benachrichtigungen -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Benachrichtigungen
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Rechnungs Erstellung -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Rechnungs Erstellung
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Buchungsfunktion -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Buchungsfunktion
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Online Angebote (Duplicate) -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Online Angebote
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Team Zugang -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Team Zugang
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Wartelistenfunktion -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Wartelistenfunktion
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: Online Angebote (Duplicate) -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    Online Angebote
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-            <!-- Feature Item: eigenes design -->
-            <div class="flex items-center justify-center gap-2 sm:gap-5">
-                <img src="../assets/icons/add.svg" alt="Add Icon">
-                <div
-                    class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                    eigenes design
-                    <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-                </div>
-            </div>
-
-        </div>
     </section>
-
-    <!-- Price Section -->
-    <section>
-
-        <div class="bg-[#e7dfd8]/50 rounded-3xl w-fit p-6">
-            <h1 class="text-2xl sm:text-4xl font-bold my-2">Starter</h1>
-            <p class="text-2xl sm:text-4xl font-bold my-8">29 Euro /Monat</p>
-            <p class="text-xl my-10 max-w-80">
-                bei <strong>jährlicher Abrechnung /</strong> <br> bei <strong>monatlicher Abrechnung 34 Euro</strong>
-            </p>
-
-            <span class="flex items-start justify-start gap-5 text-xl my-6 max-w-80">
-                <img src="../assets/icons/black-check.svg" alt="Check Icon">
-                Alle Funktionen
-            </span>
-            <span class="flex items-start justify-start gap-5 text-xl my-6 max-w-80">
-                <img src="../assets/icons/black-check.svg" alt="Check Icon">
-                600-1499 Buchungen
-            </span>
-            <span class="flex items-start justify-start gap-5 text-xl my-6 max-w-80">
-                <img src="../assets/icons/black-check.svg" alt="Check Icon">
-                Für große Anbieter, die ihre Kapazitäten voll ausschöpfen.
-            </span>
-
-            <button>
-                Get Starter
-
-            </button>
-        </div>
-    </section>
-
 
 </body>
 
