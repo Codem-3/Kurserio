@@ -7,6 +7,11 @@
     <link rel="icon" type="image/svg+xml" href="../assets/images/Logo.svg">
     <link href="../styles/output.css" rel="stylesheet">
     <title>Kurserio Für Kursanbietende</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -128,21 +133,34 @@
         </h1>
 
         <!-- Sections for Different Features -->
-        <section class="flex flex-col justify-center items-center gap-10 ">
-            <!-- Deine Angebote -->
+        <section class="flex flex-col justify-center items-center gap-10">
             <!-- Navigation -->
             <div class="flex w-full flex-wrap mt-10 gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
+                <p class="feature-link underline underline-offset-4 decoration-primaryColor decoration-2 cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 active:scale-105 text-black font-semibold"
+                    data-target="Deine">
                     Deine Angebote
                 </p>
-                <p>Online Buchen</p>
-                <p>Verwalten</p>
-                <p>Automatische Kommunikation</p>
-                <p>Team/Standorte</p>
+                <p class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
+                    data-target="Online">
+                    Online Buchen
+                </p>
+                <p class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
+                    data-target="Verwalten">
+                    Verwalten
+                </p>
+                <p class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
+                    data-target="Kommunikation">
+                    Automatische Kommunikation
+                </p>
+                <p class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
+                    data-target="Team">
+                    Team/Standorte
+                </p>
             </div>
-            <!-- Article -->
+
+            <!-- Sections -->
             <article
-                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                class="feature-section flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
                 id="Deine">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Deine Angebote</p>
@@ -160,20 +178,8 @@
                 <img src="../assets/images/forCourse/image2.png" alt="Kurserio Image 2">
             </article>
 
-            <!-- Online Buchen -->
-            <!-- Navigation -->
-            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <p>Deine Angebote</p>
-                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
-                    Online Buchen
-                </p>
-                <p>Verwalten</p>
-                <p>Automatische Kommunikation</p>
-                <p>Team/Standorte</p>
-            </div>
-            <!-- Article -->
             <article
-                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
                 id="Online">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Online Buchen</p>
@@ -191,20 +197,8 @@
                 <img src="../assets/images/forCourse/image3.png" alt="Kurserio Image 2">
             </article>
 
-            <!-- Verwalten -->
-            <!-- Navigation -->
-            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <p>Deine Angebote</p>
-                <p>Online Buchen</p>
-                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
-                    Verwalten
-                </p>
-                <p>Automatische Kommunikation</p>
-                <p>Team/Standorte</p>
-            </div>
-            <!-- Article -->
             <article
-                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
                 id="Verwalten">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Verwalten</p>
@@ -222,20 +216,8 @@
                 <img src="../assets/images/forCourse/image4.png" alt="Kurserio Image 2">
             </article>
 
-            <!-- Automatische Kommunikation -->
-            <!-- Navigation -->
-            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <p>Deine Angebote</p>
-                <p>Online Buchen</p>
-                <p>Verwalten</p>
-                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
-                    Automatische Kommunikation
-                </p>
-                <p>Team/Standorte</p>
-            </div>
-            <!-- Article -->
             <article
-                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
                 id="Kommunikation">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Automatische Kommunikation</p>
@@ -253,20 +235,8 @@
                 <img src="../assets/images/forCourse/image5.png" alt="Kurserio Image 2">
             </article>
 
-            <!-- Team und Standorte -->
-            <!-- Navigation -->
-            <div class="flex w-full flex-wrap gap-5 px-5 justify-between items-center text-[#1a1e30]">
-                <p>Deine Angebote</p>
-                <p>Online Buchen</p>
-                <p>Verwalten</p>
-                <p>Automatische Kommunikation</p>
-                <p class="underline underline-offset-4 decoration-primaryColor decoration-2 text-black font-semibold">
-                    Team/Standorte
-                </p>
-            </div>
-            <!-- Article -->
             <article
-                class="flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
+                class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white"
                 id="Team">
                 <div class="py-5 p-2 vsm:p-5">
                     <p class="text-lg sm:text-xl font-semibold">Team und Standorte</p>
@@ -301,147 +271,32 @@
         </h1>
     </section>
 
-    <!-- To Here!  -->
-    <!-- 
-Faire Preise Section
-<section class="my-5 md:my-10">
-    <h1 class="text-2xl md:text-4xl xl:text-5xl text-center font-semibold uppercase my-3">
-        Faire preise - dein preis richtet sich nach deinen buchungen
-    </h1>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const featureLinks = document.querySelectorAll(".feature-link");
+            const featureSections = document.querySelectorAll(".feature-section");
 
-    <h2 class="text-xl md:text-2xl xl:text-3xl text-center font-semibold uppercase my-6">
-        Deine Funktionen im Überblick
-    </h2>
+            featureLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const targetId = this.getAttribute("data-target");
 
-    Container for features
-    <div class="flex flex-wrap justify-center gap-7 mx-10 items-center">
+                    // Hide all sections
+                    featureSections.forEach(section => {
+                        section.classList.add("hidden");
+                    });
 
-        Feature Item: Online Angebote
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Online Angebote
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
+                    // Show the target section
+                    document.getElementById(targetId).classList.remove("hidden");
 
-        Feature Item: Benachrichtigungen
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Benachrichtigungen
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: Rechnungs Erstellung
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Rechnungs Erstellung
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: Buchungsfunktion
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Buchungsfunktion
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: Online Angebote (Duplicate)
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Online Angebote
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: Team Zugang
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Team Zugang
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: Wartelistenfunktion
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Wartelistenfunktion
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: Online Angebote (Duplicate)
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                Online Angebote
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-        Feature Item: eigenes design
-        <div class="flex items-center justify-center gap-2 sm:gap-5">
-            <img src="../assets/icons/add.svg" alt="Add Icon">
-            <div
-                class="relative text-center text-primaryColor font-semibold text-lg uppercase bg-thirdlyColor w-72 py-3 rounded-3xl">
-                eigenes design
-                <img src="../assets/icons/check.svg" alt="Check Icon" class="absolute -right-4 sm:-right-2 top-1">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-Price Section
-<section>
-
-    <div class="bg-[#e7dfd8]/50 rounded-3xl w-fit p-6">
-        <h1 class="text-2xl sm:text-4xl font-bold my-2">Starter</h1>
-        <p class="text-2xl sm:text-4xl font-bold my-8">29 Euro /Monat</p>
-        <p class="text-xl my-10 max-w-80">
-            bei <strong>jährlicher Abrechnung /</strong> <br> bei <strong>monatlicher Abrechnung 34 Euro</strong>
-        </p>
-
-        <span class="flex items-start justify-start gap-5 text-xl my-6 max-w-80">
-            <img src="../assets/icons/black-check.svg" alt="Check Icon">
-            Alle Funktionen
-        </span>
-        <span class="flex items-start justify-start gap-5 text-xl my-6 max-w-80">
-            <img src="../assets/icons/black-check.svg" alt="Check Icon">
-            600-1499 Buchungen
-        </span>
-        <span class="flex items-start justify-start gap-5 text-xl my-6 max-w-80">
-            <img src="../assets/icons/black-check.svg" alt="Check Icon">
-            Für große Anbieter, die ihre Kapazitäten voll ausschöpfen.
-        </span>
-
-        <button>
-            Get Starter
-
-        </button>
-    </div>
-</section>
-
- -->
-
-
+                    // Update link styles
+                    featureLinks.forEach(link => {
+                        link.classList.remove("underline", "underline-offset-4", "decoration-primaryColor", "decoration-2", "text-black", "font-semibold");
+                    });
+                    this.classList.add("underline", "underline-offset-4", "decoration-primaryColor", "decoration-2", "text-black", "font-semibold");
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -678,12 +678,20 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-full{
   height: 100%;
 }
 
 .h-screen{
   height: 100vh;
+}
+
+.w-20{
+  width: 5rem;
 }
 
 .w-60{
@@ -701,10 +709,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-20{
-  width: 5rem;
 }
 
 .max-w-52{
@@ -729,6 +733,10 @@ video {
 
 .max-w-\[860px\]{
   max-width: 860px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .list-disc{
@@ -1090,8 +1098,39 @@ footer {
   }
 }
 
+.hover\:font-medium:hover{
+  font-weight: 500;
+}
+
+.hover\:font-bold:hover{
+  font-weight: 700;
+}
+
+.hover\:font-semibold:hover{
+  font-weight: 600;
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+.hover\:decoration-primaryColor:hover{
+  text-decoration-color: #ddf487;
+}
+
+.hover\:decoration-2:hover{
+  text-decoration-thickness: 2px;
+}
+
+.active\:scale-105:active{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 410px){
