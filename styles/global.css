@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Styling for header and footer */
+/* Styling for header and footer fixed hight */
 header {
   min-height: 80px;
 }
@@ -31,16 +31,17 @@ footer {
   height: 40px;
 }
 
-/* Hide scrollbar */
+/* Hide default scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
 }
 
-/* Styling for hero section */
+/* Styling for hero section (fill view screen in laptop or higher) */
 .hero-landing {
   height: calc(100vh - 120px);
 }
 
+/* responsive hero section for under laptops screens */
 @media (max-width: 1279px) {
   .hero-course {
     height: auto;

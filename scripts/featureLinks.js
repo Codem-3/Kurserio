@@ -1,3 +1,5 @@
+// Handle the click event on the feature links ( Hide all sections and show the target section )
+
 document.addEventListener("DOMContentLoaded", function () {
     const featureLinks = document.querySelectorAll(".feature-link");
     const featureSections = document.querySelectorAll(".feature-section");
