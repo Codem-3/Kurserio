@@ -618,12 +618,12 @@ video {
   z-index: 10;
 }
 
-.z-50{
-  z-index: 50;
-}
-
 .z-40{
   z-index: 40;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .m-5{
@@ -733,10 +733,6 @@ video {
   height: 100vh;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-10{
   width: 2.5rem;
 }
@@ -751,6 +747,10 @@ video {
 
 .w-20{
   width: 5rem;
+}
+
+.w-4\/5{
+  width: 80%;
 }
 
 .w-6{
@@ -771,18 +771,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-4{
-  width: 1rem;
-}
-
-.w-4\/5{
-  width: 80%;
-}
-
-.w-11\/12{
-  width: 91.666667%;
 }
 
 .max-w-52{
@@ -914,6 +902,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .border-4{
   border-width: 4px;
 }
@@ -1006,6 +998,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-white\/90{
+  background-color: rgb(255 255 255 / 0.9);
+}
+
+.bg-white\/95{
+  background-color: rgb(255 255 255 / 0.95);
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -1072,10 +1072,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.text-right{
-  text-align: right;
 }
 
 .text-2xl{
@@ -1209,7 +1205,7 @@ video {
 }
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* Global Styles */
@@ -1259,6 +1255,36 @@ footer {
 
 .splide__list {
   transition: transform 0.5s ease;
+}
+
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-gray-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-secondaryColor:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 196 237 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-thirdlyColor:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 222 212 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-fourthlyColor:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(178 174 160 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#e7dfd8\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 223 216 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:underline:hover{
