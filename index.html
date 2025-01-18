@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="./assets/images/Logo.svg" />
     <link href="./styles/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <title>Kurserio</title>
 </head>
 
@@ -51,9 +53,9 @@
                 </button>
                 <nav class="flex flex-col gap-5">
                     <a href="./pages/course-providers.html"
-                        class="text-lg font-medium hover:bg-[#e7dfd8] py-2 rounded-full">Für Kursanbietende</a>
+                        class="text-lg font-medium hover:bg-[#e7dfd8]/70 py-2 rounded-full">Für Kursanbietende</a>
                     <a href="./pages/companies.html"
-                        class="text-lg font-medium hover:bg-[#e7dfd8] py-2 rounded-full">Für Unternehmen</a>
+                        class="text-lg font-medium hover:bg-[#e7dfd8]/70 py-2 rounded-full">Für Unternehmen</a>
                     <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">
                         Kostenlose Demo
                     </a>
@@ -61,41 +63,6 @@
             </div>
         </div>
     </header>
-
-    <script>
-        const burgerMenu = document.getElementById('burgerMenu');
-        const mobileNav = document.getElementById('mobileNav');
-        const sideMenu = document.getElementById('sideMenu');
-        const closeMenu = document.getElementById('closeMenu');
-
-        // Open Menu
-        burgerMenu.addEventListener('click', () => {
-            mobileNav.classList.remove('hidden');
-            setTimeout(() => {
-                sideMenu.classList.remove('translate-x-full');
-            }, 50); // Slight delay for smoother animation
-        });
-
-        // Close Menu
-        closeMenu.addEventListener('click', () => {
-            sideMenu.classList.add('translate-x-full');
-            setTimeout(() => {
-                mobileNav.classList.add('hidden');
-            }, 300); // Match the duration of the transition
-        });
-
-        // Close Menu on Outside Click
-        mobileNav.addEventListener('click', (e) => {
-            if (e.target === mobileNav) {
-                sideMenu.classList.add('translate-x-full');
-                setTimeout(() => {
-                    mobileNav.classList.add('hidden');
-                }, 300);
-            }
-        });
-    </script>
-
-
 
     <!-- Hero Section -->
     <section class="hero-landing bg-heroSection text-center relative shadow-inner">
@@ -109,60 +76,96 @@
         <!-- Content -->
         <div class="relative z-10 py-12">
             <h1
-                class="text-center text-4xl xl:text-5xl leading-relaxed font-semibold text-nowrap mx-5 lg:mx-10 xl:mx-20">
-                Effiziente & intuitive Lösungen <br>
+                class="text-center text-xl tiny:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed font-semibold sm:text-nowrap mx-2 tiny:mx-5 lg:mx-10 xl:mx-20">
+                Effiziente & intuitive Lösungen <br class="sm:block hidden">
                 für Kursanbietende und für Unternehmen
             </h1>
 
-            <div class="flex justify-between gap-6 lg:gap-20 mx-5 lg:mx-10 xl:mx-20">
-                <!-- Section for Course Providers -->
-                <article class="text-left my-5 w-full sm:max-w-[535px] text-black">
-                    <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
-                        Für Kursanbietende
-                    </p>
-                    <h3 class="text-xl font-semibold">Flexibel. Einfach. Kundennah.</h3>
-                    <h4 class="text-xl font-semibold my-3">
-                        Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.
-                    </h4>
-                    <h5 class="text-xl text-left font-normal">
-                        Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.
-                    </h5>
-                    <button
-                        class="relative flex justify-center text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor  border-primaryColor  w-full max-w-56 py-2 rounded-full">
-                        Kurs-Tool <br>entdecken
-                        <img src="./assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
-                    </button>
-                </article>
+            <!-- Splide Container -->
+            <div id="articles-slider" class="splide my-10 mx-auto" style="max-width: 1200px;">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Section for Course Providers -->
+                        <li class="splide__slide">
+                            <article class="text-left my-5 w-full max-w-[600px] text-black mx-auto">
+                                <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
+                                    Für Kursanbietende
+                                </p>
+                                <h3 class="text-lg vsm:text-xl font-semibold">Flexibel. Einfach. Kundennah.</h3>
+                                <h4 class="text-lg vsm:text-xl font-semibold my-3">
+                                    Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.
+                                </h4>
+                                <h5 class="text-lg vsm:text-xl text-left font-normal">
+                                    Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.
+                                </h5>
+                                <button
+                                    class="relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full">
+                                    Kurs-Tool <br class="hidden vsm:block">entdecken
+                                    <img src="./assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
+                                </button>
+                            </article>
+                        </li>
 
-                <!-- Section for Companies -->
-                <article class="text-left my-5 w-full sm:max-w-[535px] text-black">
-                    <p class="bg-secondaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
-                        Für Unternehmen
-                    </p>
-                    <h3 class="text-xl font-semibold">Individuell. Inspirierend. Begeisternd.</h3>
-                    <h4 class="text-xl font-semibold my-3">
-                        Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.
-                    </h4>
-                    <h5 class="text-xl text-left font-normal">
-                        Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.
-                    </h5>
-                    <button
-                        class="relative flex justify-center text-sm sm:text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor  border-secondaryColor  w-full max-w-56 py-2 rounded-full">
-                        Benefit-Plattform <br>entdecken
-                        <img src="./assets/icons/arrowBlue.svg" alt="Arrow Icon" class="absolute right-0">
-                    </button>
-                </article>
+                        <!-- Section for Companies -->
+                        <li class="splide__slide">
+                            <article class="text-left my-5 w-full max-w-[600px] text-black mx-auto">
+                                <p class="bg-secondaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
+                                    Für Unternehmen
+                                </p>
+                                <h3 class="text-lg vsm:text-lg font-semibold">Individuell. Inspirierend. Begeisternd.
+                                </h3>
+                                <h4 class="text-lg vsm:text-xl font-semibold my-3">
+                                    Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.
+                                </h4>
+                                <h5 class="text-lg vsm:text-xl text-left font-normal">
+                                    Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.
+                                </h5>
+                                <button
+                                    class="relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor border-secondaryColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full">
+                                    Benefit-Plattform <br class="hidden vsm:block">entdecken
+                                    <img src="./assets/icons/arrowBlue.svg" alt="Arrow Icon" class="absolute right-0">
+                                </button>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#articles-slider', {
+                type: 'loop',                // Loop through slides.
+                perPage: 2,                  // Show 2 articles by default.
+                padding: '20px',
+                breakpoints: {
+                    950: {
+                        perPage: 1,          // Show 1 article when the screen width is under 950px.
+                        padding: '20px',
+                    },
+                },
+                gap: '20px',                 // Space between the articles.
+                pagination: true,            // Enable pagination dots.
+                arrows: false,               // Hide navigation arrows.
+                autoplay: true,              // Enable autoplay.
+                interval: 1500,              // Interval for autoplay (1500ms = 1.5s).
+                speed: 800,                  // Transition speed (800ms).
+            }).mount(); // Initialize the slider
+        });
+    </script>
+
     <!-- Footer -->
-    <footer class="flex justify-end items-center gap-5 mx-10 xl:mx-20 transition-all">
+    <footer
+        class="flex justify-end items-center text-xs vsm:text-base gap-2 vsm:gap-5 mx-2 vsm:mx-10 xl:mx-20 transition-all">
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Kontakt</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Cookie Einstellungen</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Datenschutz</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Impressum</a>
     </footer>
 </body>
+
+<!-- All Page Scripts -->
+<script src="./scripts/headerHandler.js"></script> <!-- Handle Responsive Header -->
 
 </html>

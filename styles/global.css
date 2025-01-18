@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* Global Styles */
@@ -46,9 +46,18 @@ footer {
   .hero-course {
     height: auto;
   }
+
+  .hero-landing {
+    height: auto;
+  }
 }
 
 /* Add smooth scrolling animation */
 .splide__list {
   transition: transform 0.5s ease;
+}
+
+/* Add transition for smoothness */
+.splide__slide {
+  transition: transform 0.8s ease-in-out;
 }
