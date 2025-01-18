@@ -11,11 +11,20 @@
 
 <body class="h-screen">
     <!-- Header -->
-    <header class="flex flex-col-reverse gap-5 sm:flex-row py-3 sm:py-0 justify-between items-center px-5 lg:px-20">
+    <header class="flex gap-5 py-3 justify-between items-center px-5 lg:px-20 relative">
         <!-- Logo Icon -->
         <img src="./assets/images/Logo.svg" alt="Kurserio Icon">
+
+        <!-- Burger Menu Icon for small screens -->
+        <button id="burgerMenu" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
         <!-- Navigation -->
-        <nav class="flex justify-center items-center gap-9">
+        <nav id="navLinks" class="hidden md:flex justify-center items-center gap-4 lg:gap-9">
             <a href="./pages/course-providers.html"
                 class="underline underline-offset-4 decoration-primaryColor decoration-2">
                 Für Kursanbietende
@@ -24,11 +33,67 @@
                 class="underline underline-offset-4 decoration-secondaryColor decoration-2">
                 Für Unternehmen
             </a>
-            <a href="./pages/companies.html" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
+            <a href="" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
                 Kostenlose Demo
             </a>
         </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileNav" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+            <div id="sideMenu"
+                class="bg-white w-4/5 vsm:w-1/2 h-full p-5 text-center shadow-lg absolute right-0 transform translate-x-full transition-transform duration-300">
+                <button id="closeMenu" class="flex justify-end w-full mb-5 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+                <nav class="flex flex-col gap-5">
+                    <a href="./pages/course-providers.html" class="text-lg font-medium">Für Kursanbietende</a>
+                    <a href="./pages/companies.html" class="text-lg font-medium">Für Unternehmen</a>
+                    <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-3xl">
+                        Kostenlose Demo
+                    </a>
+                </nav>
+            </div>
+        </div>
     </header>
+
+    <script>
+        const burgerMenu = document.getElementById('burgerMenu');
+        const mobileNav = document.getElementById('mobileNav');
+        const sideMenu = document.getElementById('sideMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        // Open Menu
+        burgerMenu.addEventListener('click', () => {
+            mobileNav.classList.remove('hidden');
+            setTimeout(() => {
+                sideMenu.classList.remove('translate-x-full');
+            }, 50); // Slight delay for smoother animation
+        });
+
+        // Close Menu
+        closeMenu.addEventListener('click', () => {
+            sideMenu.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileNav.classList.add('hidden');
+            }, 300); // Match the duration of the transition
+        });
+
+        // Close Menu on Outside Click
+        mobileNav.addEventListener('click', (e) => {
+            if (e.target === mobileNav) {
+                sideMenu.classList.add('translate-x-full');
+                setTimeout(() => {
+                    mobileNav.classList.add('hidden');
+                }, 300);
+            }
+        });
+    </script>
+
+
 
     <!-- Hero Section -->
     <section class="hero-landing bg-heroSection text-center relative shadow-inner">
@@ -41,26 +106,27 @@
 
         <!-- Content -->
         <div class="relative z-10 py-12">
-            <h1 class="text-xl sm:text-2xl text-left md:text-5xl font-semibold text-nowrap mx-5 lg:mx-20">
+            <h1
+                class="text-center text-4xl xl:text-5xl leading-relaxed font-semibold text-nowrap mx-5 lg:mx-10 xl:mx-20">
                 Effiziente & intuitive Lösungen <br>
                 für Kursanbietende und für Unternehmen
             </h1>
 
-            <div class="flex justify-between gap-6 sm:gap-20 mx-5 lg:mx-20">
+            <div class="flex justify-between gap-6 lg:gap-20 mx-5 lg:mx-10 xl:mx-20">
                 <!-- Section for Course Providers -->
                 <article class="text-left my-5 w-full sm:max-w-[535px] text-black">
                     <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
                         Für Kursanbietende
                     </p>
-                    <h3 class="xl:text-xl font-semibold">Flexibel. Einfach. Kundennah.</h3>
-                    <h4 class="xl:text-xl font-semibold my-3">
+                    <h3 class="text-xl font-semibold">Flexibel. Einfach. Kundennah.</h3>
+                    <h4 class="text-xl font-semibold my-3">
                         Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.
                     </h4>
-                    <h5 class="xl:text-xl text-left font-normal">
+                    <h5 class="text-xl text-left font-normal">
                         Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.
                     </h5>
                     <button
-                        class="relative flex justify-center text-sm sm:text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor  border-primaryColor  w-full max-w-56 py-2 rounded-full">
+                        class="relative flex justify-center text-base mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor  border-primaryColor  w-full max-w-56 py-2 rounded-full">
                         Kurs-Tool <br>entdecken
                         <img src="./assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
                     </button>
@@ -71,11 +137,11 @@
                     <p class="bg-secondaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
                         Für Unternehmen
                     </p>
-                    <h3 class="xl:text-xl font-semibold">Individuell. Inspirierend. Begeisternd.</h3>
-                    <h4 class="xl:text-xl font-semibold my-3">
+                    <h3 class="text-xl font-semibold">Individuell. Inspirierend. Begeisternd.</h3>
+                    <h4 class="text-xl font-semibold my-3">
                         Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.
                     </h4>
-                    <h5 class="xl:text-xl text-left font-normal">
+                    <h5 class="text-xl text-left font-normal">
                         Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.
                     </h5>
                     <button
@@ -89,11 +155,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="flex justify-end items-center gap-5 mx-20 transition-all">
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Kontakt</a>
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Cookie Einstellungen</a>
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Datenschutz</a>
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-50">Impressum</a>
+    <footer class="flex justify-end items-center gap-5 mx-10 xl:mx-20 transition-all">
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Kontakt</a>
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Cookie Einstellungen</a>
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Datenschutz</a>
+        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Impressum</a>
     </footer>
 </body>
 
