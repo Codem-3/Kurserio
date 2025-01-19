@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* Global Styles */
@@ -42,11 +42,7 @@ footer {
 }
 
 /* responsive hero section for under laptops screens */
-@media (max-width: 1279px) {
-  .hero-course {
-    height: auto;
-  }
-
+@media (max-width: 340px) {
   .hero-landing {
     height: auto;
   }

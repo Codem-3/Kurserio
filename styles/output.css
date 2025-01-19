@@ -691,6 +691,10 @@ video {
   margin-left: 1.25rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -743,20 +747,12 @@ video {
   width: 3.5rem;
 }
 
-.w-20{
-  width: 5rem;
-}
-
 .w-32{
   width: 8rem;
 }
 
 .w-4\/5{
   width: 80%;
-}
-
-.w-48{
-  width: 12rem;
 }
 
 .w-6{
@@ -773,10 +769,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-4{
-  width: 1rem;
 }
 
 .max-w-52{
@@ -858,10 +850,6 @@ video {
 
 .gap-1{
   gap: 0.25rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-2{
@@ -1061,11 +1049,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -1192,7 +1175,7 @@ video {
 }
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* Global Styles */
@@ -1232,11 +1215,7 @@ footer {
 
 /* responsive hero section for under laptops screens */
 
-@media (max-width: 1279px) {
-  .hero-course {
-    height: auto;
-  }
-
+@media (max-width: 340px) {
   .hero-landing {
     height: auto;
   }
@@ -1313,11 +1292,6 @@ footer {
 }
 
 @media (min-width: 460px){
-  .vsm\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .vsm\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -1373,14 +1347,14 @@ footer {
     padding-bottom: 0.5rem;
   }
 
-  .vsm\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .vsm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .vsm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .vsm\:text-xl{
@@ -1390,20 +1364,12 @@ footer {
 }
 
 @media (min-width: 640px){
+  .sm\:mr-10{
+    margin-right: 2.5rem;
+  }
+
   .sm\:block{
     display: block;
-  }
-
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:w-20{
-    width: 5rem;
-  }
-
-  .sm\:w-48{
-    width: 12rem;
   }
 
   .sm\:gap-10{
@@ -1432,6 +1398,11 @@ footer {
   .sm\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-lg{
@@ -1558,6 +1529,10 @@ footer {
 
   .xl\:ml-auto{
     margin-left: auto;
+  }
+
+  .xl\:mr-20{
+    margin-right: 5rem;
   }
 
   .xl\:max-w-\[560px\]{

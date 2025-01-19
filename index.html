@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="./assets/images/Logo.svg" />
     <link href="./styles/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <title>Kurserio</title>
 </head>
 
@@ -82,7 +82,7 @@
             </h1>
 
             <!-- Splide Container -->
-            <div id="articles-slider" class="splide my-10 mx-auto" style="max-width: 1200px;">
+            <div id="articles-slider" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <!-- Section for Course Providers -->
@@ -136,28 +136,30 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#articles-slider', {
-                type: 'loop',                // Loop through slides.
-                perPage: 2,                  // Show 2 articles by default.
+                type: 'slide',
+                rewind: true,
+                perPage: 2,
                 padding: '20px',
                 breakpoints: {
                     950: {
-                        perPage: 1,          // Show 1 article when the screen width is under 950px.
+                        perPage: 1,
                         padding: '20px',
                     },
                 },
-                gap: '20px',                 // Space between the articles.
-                pagination: true,            // Enable pagination dots.
-                arrows: false,               // Hide navigation arrows.
-                autoplay: true,              // Enable autoplay.
-                interval: 1500,              // Interval for autoplay (1500ms = 1.5s).
-                speed: 800,                  // Transition speed (800ms).
-            }).mount(); // Initialize the slider
+                gap: '20px',
+                pagination: false,
+                arrows: false,
+                autoplay: true,
+                interval: 3500,
+                speed: 1000,
+                pauseOnHover: false,
+            }).mount();
         });
     </script>
 
     <!-- Footer -->
     <footer
-        class="flex justify-end items-center text-xs vsm:text-base gap-2 vsm:gap-5 mx-2 vsm:mx-10 xl:mx-20 transition-all">
+        class="flex justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 vsm:gap-5 mr-2 sm:mr-10 xl:mr-20 transition-all">
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Kontakt</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Cookie Einstellungen</a>
         <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Datenschutz</a>
