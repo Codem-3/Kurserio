@@ -7,7 +7,9 @@
     <link rel="icon" type="image/svg+xml" href="../assets/images/Logo.svg">
     <link href="../styles/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Kurserio Für Kursanbietende</title>
 </head>
 
@@ -64,13 +66,15 @@
         </video>
 
         <div class="h-full relative z-10 py-10">
-            <h1
-                class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-relaxed font-semibold m-2 md:m-8 lg:m-12">
+            <h1 class="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-relaxed font-semibold m-2 md:m-8 lg:m-12"
+                data-aos="fade-in" data-aos-duration="1000">
                 Mehr Zeit für deine Leidenschaft - Optimiere deine Kursverwaltung mit Leichtigkeit
             </h1>
-            <h2 class="sm:text-xl font-semibold text-nowrap my-8">Das einfachste Verwaltungstool für</h2>
+            <h2 class="sm:text-xl font-semibold text-nowrap my-8" data-aos="fade-in" data-aos-duration="3000">
+                Das einfachste Verwaltungstool für
+            </h2>
 
-            <div id="marquee" class="splide">
+            <div id="marquee" class="splide" data-aos="zoom-in" data-aos-duration="700">
                 <div class="splide__track">
                     <ul class="splide__list text-base sm:text-lg">
                         <li class="splide__slide">Fitnessstudios</li>
@@ -89,7 +93,8 @@
 
     <!-- Why Section -->
     <section class="md:p-10 bg-[#f4f4f4]">
-        <div class="flex justify-center items-center text-2xl sm:text-4xl font-semibold gap-5 uppercase mb-10">
+        <div class="flex justify-center items-center text-2xl sm:text-4xl font-semibold gap-5 uppercase mb-10"
+            data-aos="fade-in">
             <p>Warum</p>
             <img src="../assets/images/Studio.svg" alt="Kurserio Icon">
             <p>?</p>
@@ -98,18 +103,18 @@
         <div class="flex flex-col xl:flex-row gap-5 justify-around items-center">
             <div
                 class="flex flex-col justify-center items-center text-center xl:text-left gap-2 vsm:gap-5 xl:max-w-[560px] 2xl:max-w-max">
-                <h1 class="text-xl font-semibold w-full">Kurserio Studio - Das Kurs-Tool</h1>
-                <p class="sm:text-xl md:text-2xl lg:leading-relaxed m-4 xl:m-0">
+                <h1 class="text-xl font-semibold w-full" data-aos="fade-up">Kurserio Studio - Das Kurs-Tool</h1>
+                <p class="sm:text-xl md:text-2xl lg:leading-relaxed m-4 xl:m-0" data-aos="fade-up">
                     Von der Buchung bis zur Bestätigung: Alles, was du brauchst, um dein Angebot professionell zu
                     managen und Kunden zu begeistern.
                 </p>
-                <button
+                <button data-aos="fade-up"
                     class="relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-52 py-3 rounded-full font-semibold">
                     Kostenlose Demo
                     <img src="../assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
                 </button>
             </div>
-            <img src="../assets/images/forCourse/image1.png" alt="Kurserio image"
+            <img data-aos="zoom-in" src="../assets/images/forCourse/image1.png" alt="Kurserio image"
                 class="border-[15px] border-primaryColor/45">
         </div>
     </section>
@@ -117,25 +122,25 @@
     <!-- Icons Section -->
     <section class="flex flex-wrap justify-evenly items-start text-center p-5 md:p-10 md:text-lg">
         <!-- Organisation erleichtern -->
-        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32">
+        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32" data-aos="fade-right">
             <img src="../assets/icons/person.png" alt="Organisation erleichtern" class="w-14 vsm:w-20">
             <p>Organisation erleichtern</p>
         </div>
 
         <!-- Zeit sparen -->
-        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32">
+        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32" data-aos="fade-right">
             <img src="../assets/icons/clock.png" alt="Zeit sparen" class="w-14 vsm:w-20">
             <p>Zeit sparen</p>
         </div>
 
         <!-- Zufriedene Kunden -->
-        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32">
+        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32" data-aos="fade-left">
             <img src="../assets/icons/support.png" alt="Zufriedene Kunden" class="w-14 vsm:w-20">
             <p>Zufriedene Kunden</p>
         </div>
 
         <!-- Mehr Buchungen -->
-        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32">
+        <div class="flex flex-col justify-start items-center gap-3 m-2 w-32" data-aos="fade-left">
             <img src="../assets/icons/lamp.png" alt="Mehr Buchungen" class="w-14 vsm:w-20">
             <p>Mehr Buchungen</p>
         </div>
@@ -143,7 +148,7 @@
 
     <!-- Features Section -->
     <section class="bg-[#f4f4f4] py-5 p-2 vsm:p-5 md:p-10">
-        <h1 class="text-lg vsm:text-xl sm:text-2xl md:text-3xl text-center font-semibold mt-3">
+        <h1 class="text-lg vsm:text-xl sm:text-2xl md:text-3xl text-center font-semibold mt-3" data-aos="fade-in">
             Effizientes Management leicht gemacht - mit Funktionen die den Alltag erleichtern
         </h1>
 
@@ -151,29 +156,29 @@
         <nav
             class="flex w-full flex-wrap text-center mt-5 vsm:mt-10 gap-5 px-2 justify-center lg:justify-between items-center text-[#1a1e30]">
             <a class="feature-link underline underline-offset-4 decoration-primaryColor decoration-2 cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 active:scale-105 text-black font-semibold"
-                data-target="Deine">
+                data-target="Deine" data-aos="fade-right">
                 Deine Angebote
             </a>
             <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
-                data-target="Online">
+                data-target="Online" data-aos="fade-right">
                 Online Buchen
             </a>
             <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
-                data-target="Verwalten">
+                data-target="Verwalten" data-aos="fade-right">
                 Verwalten
             </a>
             <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
-                data-target="Kommunikation">
+                data-target="Kommunikation" data-aos="fade-right">
                 Automatische Kommunikation
             </a>
             <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
-                data-target="Team">
+                data-target="Team" data-aos="fade-right">
                 Team/Standorte
             </a>
         </nav>
 
         <!-- Feature Sections -->
-        <section
+        <article
             class="feature-section flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden"
             id="Deine">
             <div class="p-2 vsm:p-5">
@@ -190,9 +195,9 @@
                 </ul>
             </div>
             <img src="../assets/images/forCourse/image2.png" alt="Kurserio Image 2">
-        </section>
+        </article>
 
-        <section
+        <article
             class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden"
             id="Online">
             <div class="relative py-5 p-2 vsm:p-5">
@@ -210,9 +215,9 @@
                 <img src="../assets/images/forCourse/book.png" class="xl:ml-auto" alt="Book">
             </div>
             <img src="../assets/images/forCourse/image3.png" alt="Kurserio Image 2">
-        </section>
+        </article>
 
-        <section
+        <article
             class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden"
             id="Verwalten">
             <div class="py-5 p-2 vsm:p-5">
@@ -228,9 +233,9 @@
                 </ul>
             </div>
             <img src="../assets/images/forCourse/image4.png" alt="Kurserio Image 2">
-        </section>
+        </article>
 
-        <section
+        <article
             class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden"
             id="Kommunikation">
             <div class="py-5 p-2 vsm:p-5">
@@ -246,9 +251,9 @@
                 </ul>
             </div>
             <img src="../assets/images/forCourse/image5.png" alt="Kurserio Image 2">
-        </section>
+        </article>
 
-        <section
+        <article
             class="feature-section hidden flex flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden"
             id="Team">
             <div class="py-5 p-2 vsm:p-5">
@@ -265,41 +270,41 @@
                 </ul>
             </div>
             <img src="../assets/images/forCourse/image6.png" alt="Kurserio Image 2">
-        </section>
+        </article>
     </section>
 
     <!-- Questions About Our Features Section -->
     <section class="p-5 lg:p-10">
-        <h1 class="text-xl md:text-2xl text-center my-3">
+        <h1 class="text-xl md:text-2xl text-center my-3" data-aos="fade-in">
             Du hast noch Fragen zu unseren Funktionen?
         </h1>
-        <button
+        <button data-aos="fade-in"
             class="relative flex text-center mx-auto my-7 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 py-1 sm:py-5 rounded-full">
             Buche ein persönliches Beratungsgespräch
             <img src="../assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-1">
         </button>
-        <h1 class="text-xl md:text-2xl text-center">
+        <h2 class="text-xl md:text-2xl text-center" data-aos="fade-in">
             Wir nehmen uns gerne Zeit für dich.
-        </h1>
+        </h2>
     </section>
 
     <!-- Fair Prices Section -->
     <section class="p-5 lg:p-10">
 
         <!-- Section Title -->
-        <h1 class="text-xl md:text-4xl font-semibold text-center">
+        <h1 class="text-xl md:text-4xl font-semibold text-center" data-aos="fade-in">
             Faire Preise - dein Preis richtet sich nach den Buchungen
         </h1>
 
         <!-- Sub Title -->
-        <h2 class="text-xl md:text-3xl font-semibold text-center my-5 md:my-10">
+        <h2 class="text-xl md:text-3xl font-semibold text-center my-5 md:my-10" data-aos="fade-in">
             Deine Funktionen im Überblick
         </h2>
 
         <!-- Rows of Features -->
         <div class="flex flex-wrap justify-center gap-5 sm:gap-10 items-center">
             <!-- Feature: Online Angebote -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -309,7 +314,7 @@
                 </p>
             </span>
             <!-- Feature: Benachrichtigungen -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -319,7 +324,7 @@
                 </p>
             </span>
             <!-- Feature: Auto. Rechnungen -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -329,7 +334,7 @@
                 </p>
             </span>
             <!-- Feature: Buchungsfunktion -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -339,7 +344,7 @@
                 </p>
             </span>
             <!-- Feature: Mehrere Standorte -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -349,7 +354,7 @@
                 </p>
             </span>
             <!-- Feature: Team Zugang -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -359,7 +364,7 @@
                 </p>
             </span>
             <!-- Feature: Wartelistenfunktion -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -369,7 +374,7 @@
                 </p>
             </span>
             <!-- Feature: Buchungsübersicht -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -379,7 +384,7 @@
                 </p>
             </span>
             <!-- Feature: Eigenes Design -->
-            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2">
+            <span class="flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2" data-aos="zoom-in">
                 <img src="../assets/icons/add.svg" alt="Add Icon" class="w-8 md:w-auto">
                 <p
                     class="relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full">
@@ -588,5 +593,18 @@
 <script src="../scripts/featureLinks.js"></script> <!-- Feature Links -->
 <script src="../scripts/slideHandler.js"></script> <!-- Splide Slider -->
 <script src="../scripts/marqueeHandler.js"></script> <!-- Marquee Slider Effect -->
+<!-- AOS Animations -->
+<script>
+    AOS.init({
+        // Global settings:
+        offset: 120, // Offset (in pixels) from the original trigger point
+        delay: 0, // Delay (in milliseconds) between the element appearing and the animation starting
+        duration: 800, // Duration (in milliseconds) of the animation
+        easing: 'ease', // Easing function for the animation
+        once: false, // Whether animation should happen only once - while scrolling down
+        mirror: false, // Whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
+    });
+</script>
 
 </html>

@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#splide-subscription', {
+        type: 'slide',
         perPage: 3,  // Number of visible slides
         perMove: 1,
         gap: '1rem',
@@ -15,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 perPage: 2,
                 gap: '20px',
                 padding: {
-                    left: '25px',
-                    right: '25px',
+                    left: '3rem',
+                    right: '3rem',
                 },
             },
             825: {

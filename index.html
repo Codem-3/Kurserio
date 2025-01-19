@@ -133,30 +133,6 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#articles-slider', {
-                type: 'slide',
-                rewind: true,
-                perPage: 2,
-                padding: '20px',
-                breakpoints: {
-                    950: {
-                        perPage: 1,
-                        padding: '20px',
-                    },
-                },
-                gap: '20px',
-                pagination: false,
-                arrows: false,
-                autoplay: true,
-                interval: 3500,
-                speed: 1000,
-                pauseOnHover: false,
-            }).mount();
-        });
-    </script>
-
     <!-- Footer -->
     <footer
         class="flex justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 vsm:gap-5 mr-2 sm:mr-10 xl:mr-20 transition-all">
@@ -169,5 +145,6 @@
 
 <!-- All Page Scripts -->
 <script src="./scripts/headerHandler.js"></script> <!-- Handle Responsive Header -->
+<script src="./scripts/heroSwiper.js"></script> <!-- Swiper for Hero Section on mobile -->
 
 </html>
