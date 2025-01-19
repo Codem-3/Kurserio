@@ -6,27 +6,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Universal selector to apply styles to all elements */
 * {
-  outline: 1px solid red;
+  /* Uncomment the next line to show outline for all elements */
+  /* outline: 1px solid red; */
 }
 
 /* Global Styles */
 body {
   font-family: "Montserrat", serif;
+  /* Set Montserrat font family for body */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Apply box-sizing border-box for consistent layout */
 }
 
 html {
   scroll-behavior: smooth;
+  /* Enable smooth scrolling */
 }
 
-/* Styling for header and footer fixed hight */
+/* Styling for header with minimum height */
 header {
   min-height: 80px;
 }
 
+/* Styling for footer with fixed height */
 footer {
   height: 40px;
 }
@@ -36,28 +42,30 @@ footer {
   width: 0px;
 }
 
-/* Styling for hero section (fill view screen in laptop or higher) */
+/* Styling for hero section to fill the view screen on laptops or larger screens */
 .hero-landing {
   height: calc(100vh - 120px);
 }
 
-/* responsive hero section for under laptops screens */
+/* Responsive styling for hero section on screens smaller than 340px */
 @media (max-width: 340px) {
   .hero-landing {
     height: auto;
+    /* Adjust height to auto for smaller screens */
   }
 }
 
-/* Add smooth scrolling animation */
+/* Add smooth scrolling animation for Splide list */
 .splide__list {
   transition: transform 0.5s ease;
 }
 
-/* Add transition for smoothness */
+/* Add smooth transition for Splide slides */
 .splide__slide {
   transition: transform 0.8s ease-in-out;
 }
 
+/* Styling for marquee slides within Splide */
 #marquee .splide__slide {
   display: flex;
   justify-content: center;
