@@ -61,3 +61,17 @@ footer {
 .splide__slide {
   transition: transform 0.8s ease-in-out;
 }
+
+#marquee .splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  color: #ddf487;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #b2aea0;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
