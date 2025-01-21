@@ -675,6 +675,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -695,6 +705,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -709,6 +723,10 @@ video {
 
 .mt-auto{
   margin-top: auto;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .block{
@@ -783,6 +801,10 @@ video {
   max-width: 600px;
 }
 
+.max-w-96{
+  max-width: 24rem;
+}
+
 .translate-x-full{
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -842,10 +864,6 @@ video {
 
 .justify-evenly{
   justify-content: space-evenly;
-}
-
-.justify-items-center{
-  justify-items: center;
 }
 
 .gap-1{
@@ -983,6 +1001,10 @@ video {
   background-color: rgb(255 255 255 / 0.95);
 }
 
+.bg-\[\#e7dfd8\]\/50{
+  background-color: rgb(231 223 216 / 0.5);
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -1055,6 +1077,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .text-2xl{
@@ -1337,12 +1363,24 @@ footer {
     max-width: 14rem;
   }
 
+  .vsm\:gap-3{
+    gap: 0.75rem;
+  }
+
   .vsm\:gap-5{
     gap: 1.25rem;
   }
 
   .vsm\:gap-7{
     gap: 1.75rem;
+  }
+
+  .vsm\:gap-4{
+    gap: 1rem;
+  }
+
+  .vsm\:gap-0{
+    gap: 0px;
   }
 
   .vsm\:p-10{

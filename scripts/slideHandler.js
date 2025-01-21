@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'slide',
         perPage: 3,  // Number of visible slides
         perMove: 1,
-        gap: '1rem',
+        gap: '2rem',
         padding: {
             left: '3rem',
             right: '3rem',
