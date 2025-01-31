@@ -16,9 +16,9 @@
 <body>
 
     <!-- Header -->
-    <header class="fixed top-0 flex gap-5 py-3 justify-between items-center px-5 lg:px-20 z-50 bg-white w-full">
+    <header class="fixed top-0 z-50 bg-white w-full">
         <!-- Logo Icon -->
-        <img src="../assets/images/Studio.svg" alt="Kurserio Icon">
+        <img src="../assets/images/Logo.png" alt="Kurserio Icon">
 
         <!-- Burger Menu Icon for small screens -->
         <button id="burgerMenu" class="block md:hidden focus:outline-none">
@@ -96,7 +96,7 @@
         <div class="flex justify-center items-center text-2xl sm:text-4xl font-semibold gap-5 uppercase mb-10"
             data-aos="fade-in">
             <p>Warum</p>
-            <img src="../assets/images/Studio.svg" alt="Kurserio Icon">
+            <img src="../assets/images/Logo.png" class="w-36" alt="Kurserio Icon">
             <p>?</p>
         </div>
 
@@ -154,7 +154,7 @@
 
         <!-- Navigation for Features -->
         <nav
-            class="flex w-full flex-wrap text-center mt-5 vsm:mt-10 gap-5 px-2 justify-center lg:justify-between items-center text-[#1a1e30]">
+            class="flex w-full flex-wrap text-center mt-5 vsm:mt-10 gap-5 lg:gap-10 xl:gap-16 px-5 justify-center items-center text-[#1a1e30]">
             <a class="feature-link underline underline-offset-4 decoration-primaryColor decoration-2 cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 active:scale-105 text-black font-semibold"
                 data-target="Deine" data-aos="fade-right">
                 Deine Angebote
@@ -168,12 +168,12 @@
                 Verwalten
             </a>
             <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
-                data-target="Kommunikation" data-aos="fade-right">
-                Automatische Kommunikation
-            </a>
-            <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
                 data-target="Team" data-aos="fade-right">
                 Team/Standorte
+            </a>
+            <a class="feature-link cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105"
+                data-target="Kommunikation" data-aos="fade-right">
+                Automatische Kommunikation
             </a>
         </nav>
 
@@ -194,7 +194,7 @@
                     <li>Nach Wahl Websiteerstellung</li>
                 </ul>
             </div>
-            <img src="../assets/images/forCourse/image2.png" alt="Kurserio Image 2">
+            <img src="../assets/images/forCourse/image2.png" alt="Kurserio Image 2" class="max-w-[700px] mx-auto">
         </article>
 
         <article
@@ -398,21 +398,21 @@
 
     <!-- Monthly Subscription Section -->
     <!-- Splide Container -->
-    <section id="splide-subscription" class="splide my-5 vsm:my-10" data-aos="fade-up">
+    <section id="splide-subscription" class="splide my-5 px-5 md:px-20" data-aos="fade-up">
         <div class="splide__track">
             <ul class="splide__list">
                 <!-- Starter Plan -->
                 <li class="splide__slide max-w-96">
-                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 vsm:p-10 h-full flex flex-col">
+                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col">
                         <img src="../assets/images/forPlans/starter.png" class="absolute top-5 right-3 w-14"
                             alt="Starter Icon">
                         <h1 class="font-bold text-2xl mb-4">Starter</h1>
                         <h2 class="font-semibold text-2xl">29 Euro /Monat</h2>
-                        <p class="text-lg my-7">
+                        <p class="text-lg my-5">
                             bei <strong>jährlicher Abrechnung</strong> / bei <strong>monatlicher <br> Abrechnung 34
                                 Euro</strong>
                         </p>
-                        <div class="flex flex-col gap-3 vsm:gap-5 mb-7 tiny:text-lg">
+                        <div class="flex flex-col gap-3 mb-5 tiny:text-lg">
                             <span class="flex items-center gap-1">
                                 <img src="../assets/icons/black-check.svg" alt="Black Check Icon">
                                 Alle Funktionen
@@ -436,16 +436,16 @@
 
                 <!-- Growth Plan -->
                 <li class="splide__slide max-w-96">
-                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 vsm:p-10 h-full flex flex-col">
+                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col">
                         <img src="../assets/images/forPlans/growth.png" class="absolute top-5 right-3 w-12"
                             alt="Growth Icon">
                         <h1 class="font-bold text-2xl mb-4">Growth</h1>
                         <h2 class="font-semibold text-2xl">49 Euro /Monat</h2>
-                        <p class="text-lg my-7">
+                        <p class="text-lg my-5">
                             bei <strong>jährlicher Abrechnung</strong> / bei <strong>monatlicher <br>Abrechnung 54
                                 Euro</strong>
                         </p>
-                        <div class="flex flex-col gap-3 vsm:gap-5 mb-7 tiny:text-lg">
+                        <div class="flex flex-col gap-3 mb-5 tiny:text-lg">
                             <span class="flex items-center gap-1">
                                 <img src="../assets/icons/black-check.svg" alt="Black Check Icon">
                                 Alle Funktionen
@@ -469,16 +469,16 @@
 
                 <!-- Professional Plan -->
                 <li class="splide__slide max-w-96">
-                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 vsm:p-10 h-full flex flex-col">
+                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col">
                         <img src="../assets/images/forPlans/professional.png" class="absolute top-5 right-3 w-10"
                             alt="Professional Icon">
                         <h1 class="font-bold text-2xl mb-4">Professional</h1>
                         <h2 class="font-semibold text-2xl">79 Euro/ Monat</h2>
-                        <p class="text-lg my-7">
+                        <p class="text-lg my-5">
                             bei <strong>jährlicher Abrechnung</strong> / bei <strong>monatlicher <br>Abrechnung 84
                                 Euro</strong>
                         </p>
-                        <div class="flex flex-col gap-3 vsm:gap-5 mb-7 tiny:text-lg">
+                        <div class="flex flex-col gap-3 mb-5 tiny:text-lg">
                             <span class="flex items-center gap-1">
                                 <img src="../assets/icons/black-check.svg" alt="Black Check Icon">
                                 Alle Funktionen
@@ -502,16 +502,16 @@
 
                 <!-- Premium Plan -->
                 <li class="splide__slide max-w-96">
-                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 vsm:p-10 h-full flex flex-col">
+                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col">
                         <img src="../assets/images/forPlans/premium.png" class="absolute top-5 right-3 w-12"
                             alt="Premium Icon">
                         <h1 class="font-bold text-2xl mb-4">Premium</h1>
                         <h2 class="font-semibold text-2xl">149 Euro/ Monat</h2>
-                        <p class="text-lg my-7">
+                        <p class="text-lg my-5">
                             bei <strong>jährlicher Abrechnung</strong> / bei <strong>monatlicher <br>Abrechnung 159
                                 Euro</strong>
                         </p>
-                        <div class="flex flex-col gap-3 vsm:gap-5 mb-7 tiny:text-lg">
+                        <div class="flex flex-col gap-3 mb-5 tiny:text-lg">
                             <span class="flex items-center gap-1">
                                 <img src="../assets/icons/black-check.svg" alt="Black Check Icon">
                                 Alle Funktionen
@@ -535,16 +535,16 @@
 
                 <!-- Unlimited Plan -->
                 <li class="splide__slide max-w-96">
-                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 vsm:p-10 h-full flex flex-col">
+                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col">
                         <img src="../assets/images/forPlans/unlimited.png" class="absolute top-5 right-3 w-12"
                             alt="Unlimited Icon">
                         <h1 class="font-bold text-2xl mb-4">Unlimited</h1>
                         <h2 class="font-semibold text-2xl">199 Euro/ Monat</h2>
-                        <p class="text-lg my-7">
+                        <p class="text-lg my-5">
                             bei <strong>jährlicher Abrechnung</strong> / bei <strong>monatlicher <br>Abrechnung 224
                                 Euro</strong>
                         </p>
-                        <div class="flex flex-col gap-3 vsm:gap-5 mb-7 tiny:text-lg">
+                        <div class="flex flex-col gap-3 mb-5 tiny:text-lg">
                             <span class="flex items-center gap-1">
                                 <img src="../assets/icons/black-check.svg" alt="Black Check Icon">
                                 Alle Funktionen
@@ -568,7 +568,7 @@
 
                 <!-- Full Service Plan -->
                 <li class="splide__slide max-w-96">
-                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 vsm:p-10 h-full flex flex-col">
+                    <div class="relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col">
                         <img src="../assets/images/forPlans/full-service.png" class="absolute top-5 right-3 w-12"
                             alt="Full Service Icon">
                         <h1 class="font-bold text-2xl">Full Service</h1>

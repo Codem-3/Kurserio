@@ -12,27 +12,21 @@
 </head>
 
 <body class="h-screen">
-    <!-- Header -->
-    <header class="flex gap-5 py-3 justify-between items-center px-5 lg:px-20 relative">
+    <header>
         <!-- Logo Icon -->
-        <img src="./assets/images/Logo.svg" alt="Kurserio Icon">
+        <img src="./assets/images/Logo.png" alt="Kurserio Icon">
 
         <!-- Burger Menu Icon for small screens -->
-        <button id="burgerMenu" class="block md:hidden focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+        <button id="burgerMenu">
+            <img src="./assets/icons/menu.svg" alt="burgerMenu Icon">
         </button>
 
         <!-- Navigation -->
-        <nav id="navLinks" class="hidden md:flex justify-center items-center gap-4 lg:gap-9">
-            <a href="./pages/course-providers.html"
-                class="underline underline-offset-4 decoration-primaryColor decoration-2">
+        <nav id="navLinks">
+            <a href="./pages/course-providers.html" class="decoration-primaryColor">
                 Für Kursanbietende
             </a>
-            <a href="./pages/companies.html"
-                class="underline underline-offset-4 decoration-secondaryColor decoration-2">
+            <a href="./pages/companies.html" class="decoration-secondaryColor">
                 Für Unternehmen
             </a>
             <a href="" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
@@ -41,21 +35,14 @@
         </nav>
 
         <!-- Mobile Navigation -->
-        <div id="mobileNav" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
-            <div id="sideMenu"
-                class="bg-white/95 w-4/5 vsm:w-1/2 h-full p-5 text-center shadow-lg absolute right-0 transform translate-x-full transition-transform duration-300">
-                <button id="closeMenu" class="flex justify-end w-full mb-5 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
+        <div id="mobileNav" class="hidden">
+            <div id="sideMenu" class="transform translate-x-full">
+                <button id="closeMenu">
+                    <img src="./assets/icons/close.svg" alt="CloseMenu Icon">
                 </button>
-                <nav class="flex flex-col gap-5">
-                    <a href="./pages/course-providers.html"
-                        class="text-lg font-medium hover:bg-[#e7dfd8]/70 py-2 rounded-full">Für Kursanbietende</a>
-                    <a href="./pages/companies.html"
-                        class="text-lg font-medium hover:bg-[#e7dfd8]/70 py-2 rounded-full">Für Unternehmen</a>
+                <nav>
+                    <a href="./pages/course-providers.html">Für Kursanbietende</a>
+                    <a href="./pages/companies.html">Für Unternehmen</a>
                     <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">
                         Kostenlose Demo
                     </a>
@@ -65,9 +52,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-landing bg-heroSection text-center relative shadow-inner">
+    <section id="hero" class="hero-landing">
         <!-- Video Background -->
-        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+        <video autoplay muted loop playsinline>
             <source src="./assets/videos/hero.mp4" type="video/mp4">
             <source src="path-to-your-video.webm" type="video/webm">
             Your browser does not support video playback.
@@ -75,8 +62,7 @@
 
         <!-- Content -->
         <div class="relative z-10 py-12">
-            <h1
-                class="text-center text-xl tiny:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed font-semibold sm:text-nowrap mx-2 tiny:mx-5 lg:mx-10 xl:mx-20">
+            <h1>
                 Effiziente & intuitive Lösungen <br class="sm:block hidden">
                 für Kursanbietende und für Unternehmen
             </h1>
@@ -87,43 +73,28 @@
                     <ul class="splide__list">
                         <!-- Section for Course Providers -->
                         <li class="splide__slide">
-                            <article class="text-left my-5 w-full max-w-[600px] text-black mx-auto">
-                                <p class="bg-primaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
-                                    Für Kursanbietende
-                                </p>
-                                <h3 class="text-lg vsm:text-xl font-semibold">Flexibel. Einfach. Kundennah.</h3>
-                                <h4 class="text-lg vsm:text-xl font-semibold my-3">
-                                    Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.
-                                </h4>
-                                <h5 class="text-lg vsm:text-xl text-left font-normal">
-                                    Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.
-                                </h5>
-                                <button
-                                    class="relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full">
+                            <article>
+                                <p class="bg-primaryColor">Für Kursanbietende</p>
+                                <h3>Flexibel. Einfach. Kundennah.</h3>
+                                <h4>Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.</h4>
+                                <h5>Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.</h5>
+                                <button class="border-primaryColor">
                                     Kurs-Tool <br class="hidden vsm:block">entdecken
-                                    <img src="./assets/icons/arrowYellow.svg" alt="Arrow Icon" class="absolute right-0">
+                                    <img src="./assets/icons/forLanding/arrowYellow.svg" alt="Arrow Icon">
                                 </button>
                             </article>
                         </li>
 
                         <!-- Section for Companies -->
                         <li class="splide__slide">
-                            <article class="text-left my-5 w-full max-w-[600px] text-black mx-auto">
-                                <p class="bg-secondaryColor text-center py-3 px-4 rounded-3xl w-full my-10 font-medium">
-                                    Für Unternehmen
-                                </p>
-                                <h3 class="text-lg vsm:text-lg font-semibold">Individuell. Inspirierend. Begeisternd.
-                                </h3>
-                                <h4 class="text-lg vsm:text-xl font-semibold my-3">
-                                    Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.
-                                </h4>
-                                <h5 class="text-lg vsm:text-xl text-left font-normal">
-                                    Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.
-                                </h5>
-                                <button
-                                    class="relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor border-secondaryColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full">
+                            <article>
+                                <p class="bg-secondaryColor">Für Unternehmen</p>
+                                <h3>Individuell. Inspirierend. Begeisternd.</h3>
+                                <h4>Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.</h4>
+                                <h5>Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.</h5>
+                                <button class="border-secondaryColor">
                                     Benefit-Plattform <br class="hidden vsm:block">entdecken
-                                    <img src="./assets/icons/arrowBlue.svg" alt="Arrow Icon" class="absolute right-0">
+                                    <img src="./assets/icons/forLanding/arrowBlue.svg" alt="Arrow Icon">
                                 </button>
                             </article>
                         </li>
@@ -134,12 +105,11 @@
     </section>
 
     <!-- Footer -->
-    <footer
-        class="flex justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 vsm:gap-5 mr-2 sm:mr-10 xl:mr-20 transition-all">
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Kontakt</a>
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Cookie Einstellungen</a>
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Datenschutz</a>
-        <a href="#" class="hover:underline underline-offset-4 decoration-primaryColor z-40">Impressum</a>
+    <footer>
+        <a href="#">Kontakt</a>
+        <a href="#">Cookie Einstellungen</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Impressum</a>
     </footer>
 </body>
 
