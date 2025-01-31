@@ -12,21 +12,22 @@
 </head>
 
 <body class="h-screen">
+
     <header>
         <!-- Logo Icon -->
         <img src="./assets/images/Logo.png" alt="Kurserio Icon">
 
         <!-- Burger Menu Icon for small screens -->
         <button id="burgerMenu">
-            <img src="./assets/icons/menu.svg" alt="burgerMenu Icon">
+            <img src="./assets/icons/menu.svg" alt="BurgerMenu Icon">
         </button>
 
         <!-- Navigation -->
         <nav id="navLinks">
-            <a href="./pages/course-providers.html" class="decoration-primaryColor">
+            <a href="./pages/course.html" class="decoration-primaryColor">
                 Für Kursanbietende
             </a>
-            <a href="./pages/companies.html" class="decoration-secondaryColor">
+            <a href="./pages/company.html" class="decoration-secondaryColor">
                 Für Unternehmen
             </a>
             <a href="" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
@@ -41,20 +42,18 @@
                     <img src="./assets/icons/close.svg" alt="CloseMenu Icon">
                 </button>
                 <nav>
-                    <a href="./pages/course-providers.html">Für Kursanbietende</a>
-                    <a href="./pages/companies.html">Für Unternehmen</a>
-                    <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">
-                        Kostenlose Demo
-                    </a>
+                    <a href="./pages/course.html">Für Kursanbietende</a>
+                    <a href="./pages/company.html">Für Unternehmen</a>
+                    <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">Kostenlose Demo</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-landing">
+    <section id="hero-landing" class="hero-landing">
         <!-- Video Background -->
-        <video autoplay muted loop playsinline>
+        <video autoplay muted loop playsinline id="bg-video">
             <source src="./assets/videos/hero.mp4" type="video/mp4">
             <source src="path-to-your-video.webm" type="video/webm">
             Your browser does not support video playback.

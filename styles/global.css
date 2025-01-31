@@ -7,10 +7,11 @@
 @tailwind utilities;
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /*! -------------------- Global Styles -------------------- */
+
 body {
   font-family: "Montserrat", serif;
   margin: 0;
@@ -23,7 +24,7 @@ html {
 }
 
 header {
-  @apply flex gap-5 py-3 justify-between items-center px-5 lg:px-20 min-h-20
+  @apply flex gap-5 py-3 justify-between items-center px-5 lg:px-20 min-h-20 z-50 bg-white w-full shadow
 }
 
 header>img {
@@ -70,76 +71,14 @@ footer>a {
   @apply text-lg font-medium hover:bg-[#e7dfd8]/70 py-2 rounded-full
 }
 
+#bg-video {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
+}
+
 /* Hide default scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
 }
-
-/*! -------------------- Landing Page -------------------- */
-#hero {
-  @apply text-center relative shadow-inner;
-  height: calc(100vh - 120px);
-}
-
-/* Responsive hero section on screens smaller than 340px */
-@media (max-width: 340px) {
-  #hero {
-    height: auto;
-  }
-}
-
-#hero>video {
-  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
-}
-
-#hero h1 {
-  @apply text-center text-xl tiny:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed font-semibold sm:text-nowrap mx-2 tiny:mx-5 lg:mx-10 xl:mx-20
-}
-
-.splide__slide>article {
-  @apply text-left my-5 w-full max-w-[600px] text-black mx-auto
-}
-
-.splide__slide>article>p {
-  @apply text-center py-3 px-4 rounded-3xl w-full my-10 font-medium
-}
-
-.splide__slide>article>h3 {
-  @apply text-lg vsm:text-xl font-semibold
-}
-
-.splide__slide>article>h4 {
-  @apply text-lg vsm:text-xl font-semibold my-3
-}
-
-.splide__slide>article>h5 {
-  @apply text-lg vsm:text-xl text-left font-normal
-}
-
-.splide__slide>article>button {
-  @apply relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full
-}
-
-.splide__slide>article>button img {
-  @apply absolute right-0
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Smooth scrolling for Splide list */
 .splide__list {
@@ -149,6 +88,69 @@ footer>a {
 /* Smooth transition for Splide slides */
 .splide__slide {
   transition: transform 0.8s ease-in-out;
+}
+
+/*! -------------------- Landing Page -------------------- */
+
+#hero-landing {
+  @apply text-center relative shadow-inner;
+  height: calc(100vh - 120px);
+}
+
+/* Responsive hero section on screens smaller than 340px */
+@media (max-width: 340px) {
+  #hero-landing {
+    height: auto;
+  }
+}
+
+#hero-landing h1 {
+  @apply text-center text-xl tiny:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed font-semibold sm:text-nowrap mx-2 tiny:mx-5 lg:mx-10 xl:mx-20
+}
+
+li>article {
+  @apply text-left my-5 w-full max-w-[600px] text-black mx-auto
+}
+
+li>article>p {
+  @apply text-center py-3 px-4 rounded-3xl w-full my-10 font-medium
+}
+
+li>article>h3 {
+  @apply text-lg vsm:text-xl font-semibold
+}
+
+li>article>h4 {
+  @apply text-lg vsm:text-xl font-semibold my-3
+}
+
+li>article>h5 {
+  @apply text-lg vsm:text-xl text-left font-normal
+}
+
+li>article>button {
+  @apply relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full
+}
+
+li>article>button img {
+  @apply absolute right-0
+}
+
+
+
+/*! -------------------- Landing Page -------------------- */
+
+#hero-course {
+  @apply relative text-center shadow-inner mt-20
+}
+
+#hero-course>div>h1 {
+  @apply text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-relaxed font-semibold m-2 md:m-8 lg:m-12
+}
+
+
+#hero-course>div>h2 {
+  @apply sm:text-xl font-semibold text-nowrap my-8
 }
 
 /* Styling for marquee slides within Splide */
@@ -164,4 +166,180 @@ footer>a {
   border-radius: 60px;
   padding: 10px 20px;
   margin-right: 20px;
+}
+
+#warum {
+  @apply md:p-10 bg-[#f4f4f4]
+}
+
+#warum>div {
+  @apply flex justify-center items-center text-2xl sm:text-4xl font-semibold gap-5 uppercase mb-10
+}
+
+#warum>article {
+  @apply flex flex-col xl:flex-row gap-5 justify-around items-center
+}
+
+#warum>article>div {
+  @apply flex flex-col justify-center items-center text-center xl:text-left gap-2 vsm:gap-5 xl:max-w-[560px] 2xl:max-w-max
+}
+
+#warum>article h1 {
+  @apply text-xl font-semibold w-full
+}
+
+#warum>article p {
+  @apply sm:text-xl md:text-2xl lg:leading-relaxed m-4 xl:m-0
+}
+
+#warum>article button {
+  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-52 py-3 rounded-full font-semibold
+}
+
+#warum>article button>img {
+  @apply absolute right-0
+}
+
+#warum>article>img {
+  @apply border-[15px] border-primaryColor/45
+}
+
+#benefits {
+  @apply flex flex-wrap justify-evenly items-start text-center p-5 md:p-10 md:text-lg
+}
+
+#benefits>div {
+  @apply flex flex-col justify-start items-center gap-3 m-2 w-32
+}
+
+#benefits>div>img {
+  @apply w-14 vsm:w-20
+}
+
+#features {
+  @apply bg-[#f4f4f4] py-5 p-2 vsm:p-5 md:p-10
+}
+
+#features>h1 {
+  @apply text-lg vsm:text-xl sm:text-2xl md:text-3xl text-center font-semibold mt-3
+}
+
+#features>nav {
+  @apply flex w-full flex-wrap text-center mt-5 vsm:mt-10 gap-5 lg:gap-10 xl:gap-16 px-5 justify-center items-center text-[#1a1e30]
+}
+
+#features>nav>a {
+  @apply cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105
+}
+
+#features>article {
+  @apply flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden
+}
+
+#features>article div {
+  @apply py-5 p-2 vsm:p-5
+}
+
+#features>article h2 {
+  @apply text-lg sm:text-xl font-semibold
+}
+
+#features>article h3 {
+  @apply text-3xl sm:text-5xl font-semibold my-2
+}
+
+#features>article p {
+  @apply vsm:text-lg sm:text-xl xl:max-w-[600px]
+}
+
+#features>article ul {
+  @apply list-disc p-5
+}
+
+#questions h1, h2 {
+  @apply p-5 text-xl md:text-2xl text-center
+}
+
+#questions>button {
+  @apply relative flex text-center mx-auto my-3 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 py-1 sm:py-5 rounded-full
+}
+
+#questions>button>img {
+  @apply absolute right-1
+}
+
+#fair {
+  @apply p-5 lg:p-10
+}
+
+#fair>h1 {
+  @apply text-xl md:text-4xl font-semibold text-center
+}
+
+#fair>h2 {
+  @apply text-xl md:text-3xl font-semibold text-center my-5 md:my-10
+}
+
+#fair>div {
+  @apply flex flex-wrap justify-center gap-5 sm:gap-10 items-center
+}
+
+#fair>div>span {
+  @apply flex justify-center w-full vsm:w-fit items-center gap-1 md:gap-2
+}
+
+#fair>div>span>img {
+  @apply w-8 md:w-auto
+}
+
+#fair>div>span>p {
+  @apply relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full
+}
+
+#fair>div>span>p>img {
+  @apply absolute top-1 md:-top-1 -right-4
+}
+
+#splide-subscription {
+  @apply my-5 px-5 md:px-20
+}
+
+#splide-subscription li {
+  @apply max-w-96
+}
+
+#splide-subscription li>div {
+  @apply relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col
+}
+
+#splide-subscription li>div>img {
+  @apply absolute top-5 right-3
+}
+
+#splide-subscription li>div>h1 {
+  @apply font-bold text-2xl mb-4
+}
+
+#splide-subscription li>div>h2 {
+  @apply font-semibold text-2xl
+}
+
+#splide-subscription li>div>p {
+  @apply text-lg my-5
+}
+
+#splide-subscription li>div>div {
+  @apply flex flex-col gap-3 mb-5 tiny:text-lg
+}
+
+#splide-subscription li span {
+  @apply flex gap-1
+}
+
+#splide-subscription li>div>button {
+  @apply mt-auto flex justify-between items-center p-1 w-full text-lg rounded-full
+}
+
+#splide-subscription li>div>button>p {
+  @apply ml-5
 }
