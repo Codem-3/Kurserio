@@ -1089,7 +1089,7 @@ footer>a{
 /* Hide default scrollbar */
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
 /* Smooth scrolling for Splide list */
