@@ -25,17 +25,18 @@ html {
 
 header {
   @apply flex gap-5 py-3 justify-between items-center px-5 lg:px-20 min-h-20 z-50 bg-transparent w-full;
-  transition: background-color 0.3s, backdrop-filter 0.3s;
+  transition: background-color 0.3s, backdrop-filter 0.3s, padding 0.3s, min-height 0.3s;
 }
 
 header.scrolled {
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  padding: 0px 15px;
 }
 
 header>img {
-  @apply w-32 vsm:w-36
+  @apply w-32 vsm:w-36;
 }
 
 footer {
