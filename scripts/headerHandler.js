@@ -1,3 +1,14 @@
+// Handle Header Scroll Effect
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Handle Responsive Navigation Menu (Mobile)
 const burgerMenu = document.getElementById('burgerMenu');
 const mobileNav = document.getElementById('mobileNav');
 const sideMenu = document.getElementById('sideMenu');

@@ -572,40 +572,28 @@ video {
   position: relative;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.top-0{
-  top: 0px;
+.-bottom-0{
+  bottom: -0px;
 }
 
 .-right-0{
   right: -0px;
 }
 
-.-right-5{
-  right: -1.25rem;
+.-right-1{
+  right: -0.25rem;
 }
 
-.-right-4{
-  right: -1rem;
+.bottom-0{
+  bottom: 0px;
 }
 
-.-bottom-0{
-  bottom: -0px;
+.top-0{
+  top: 0px;
 }
 
-.-bottom-1{
-  bottom: -0.25rem;
+.-z-50{
+  z-index: -50;
 }
 
 .z-10{
@@ -634,10 +622,6 @@ video {
   display: none;
 }
 
-.h-\[50px\]{
-  height: 50px;
-}
-
 .h-full{
   height: 100%;
 }
@@ -658,12 +642,8 @@ video {
   width: 3.5rem;
 }
 
-.w-36{
-  width: 9rem;
-}
-
-.w-\[155px\]{
-  width: 155px;
+.w-32{
+  width: 8rem;
 }
 
 .max-w-\[700px\]{
@@ -672,11 +652,6 @@ video {
 
 .translate-x-full{
   --tw-translate-x: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-rotate-12{
-  --tw-rotate: -12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -800,10 +775,6 @@ video {
   font-weight: 600;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-
 .underline{
   text-decoration-line: underline;
 }
@@ -855,8 +826,27 @@ header{
   }
 }
 
+header {
+  transition: background-color 0.3s, -webkit-backdrop-filter 0.3s;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+  transition: background-color 0.3s, backdrop-filter 0.3s, -webkit-backdrop-filter 0.3s;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
 header>img{
-  width: 9rem;
+  width: 8rem;
+}
+
+@media (min-width: 460px){
+  header>img{
+    width: 9rem;
+  }
 }
 
 footer{
@@ -1099,7 +1089,7 @@ footer>a{
 /* Hide default scrollbar */
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 
 /* Smooth scrolling for Splide list */
@@ -1112,6 +1102,24 @@ footer>a{
 
 .splide__slide {
   transition: transform 0.8s ease-in-out;
+}
+
+/* Custom STUDIO Logo */
+
+.custom-logo{
+  position: relative;
+  height: 50px;
+  width: 155px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.custom-logo img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  --tw-rotate: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 /*! -------------------- Landing Page -------------------- */
@@ -1294,7 +1302,7 @@ li>article>button img{
 
 #hero-course{
   position: relative;
-  margin-top: 5rem;
+  padding-top: 5rem;
   text-align: center;
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
@@ -1375,6 +1383,8 @@ li>article>button img{
 #warum{
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 @media (min-width: 880px){
@@ -1391,8 +1401,7 @@ li>article>button img{
   gap: 1.25rem;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (min-width: 690px){
@@ -2018,8 +2027,25 @@ li>article>button img{
 }
 
 @media (min-width: 460px){
+  .vsm\:-bottom-1{
+    bottom: -0.25rem;
+  }
+
+  .vsm\:-right-4{
+    right: -1rem;
+  }
+
   .vsm\:block{
     display: block;
+  }
+
+  .vsm\:w-36{
+    width: 9rem;
+  }
+
+  .vsm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

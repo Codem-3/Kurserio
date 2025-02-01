@@ -15,41 +15,7 @@
 
 <body>
 
-    <header class="fixed top-0 items-center">
-        <!-- Custom Logo Icon -->
-        <span class="font-bold uppercase relative h-[50px] w-[155px]">
-            <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="absolute top-0 left-0 -rotate-12 w-36">
-            <p class="absolute -bottom-1 -right-4 text-lg">Studio</p>
-        </span>
-
-        <!-- Burger Menu Icon for small screens -->
-        <button id="burgerMenu">
-            <img src="../assets/icons/menu.svg" alt="BurgerMenu Icon">
-        </button>
-        <!-- Navigation -->
-        <nav id="navLinks" class="decoration-primaryColor">
-            <a href="#">Funktionen</a>
-            <a href="#">Preise</a>
-            <a href="#" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">Kostenlose Demo</a>
-        </nav>
-
-        <!-- Mobile Navigation -->
-        <div id="mobileNav" class="hidden">
-            <div id="sideMenu" class="transform translate-x-full">
-                <button id="closeMenu">
-                    <img src="../assets/icons/close.svg" alt="CloseMenu Icon">
-                </button>
-                <nav>
-                    <a href="">Funktionen</a>
-                    <a href="">Preise</a>
-                    <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">Kostenlose Demo</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero-course">
+    <main class="relative">
         <!-- Video Background -->
         <video autoplay muted loop playsinline id="bg-video">
             <source src="../assets/videos/hero.webm" type="video/webm">
@@ -57,36 +23,77 @@
             Your browser does not support video playback.
         </video>
 
-        <div class="h-full relative z-10 py-10">
-            <h1 data-aos="fade-in" data-aos-duration="1000">
-                Mehr Zeit für deine Leidenschaft - Optimiere deine Kursverwaltung mit Leichtigkeit
-            </h1>
-            <h2 data-aos="fade-in" data-aos-duration="3000">
-                Das einfachste Verwaltungstool für
-            </h2>
+        <!-- Header -->
+        <header class="fixed top-0 items-center">
+            <!-- Custom Logo Icon -->
+            <span class="custom-logo">
+                <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-32 vsm:w-36">
+                <p class="absolute -bottom-0 vsm:-bottom-1 -right-0 vsm:-right-4 vsm:text-lg">Studio</p>
+            </span>
 
-            <div id="marquee" class="splide" data-aos="zoom-in" data-aos-duration="700">
-                <div class="splide__track">
-                    <ul class="splide__list text-base sm:text-lg">
-                        <li class="splide__slide">Fitnessstudios</li>
-                        <li class="splide__slide">Kreativkurse</li>
-                        <li class="splide__slide">Kurse aller Art</li>
-                        <li class="splide__slide">Tanzkurse</li>
-                        <li class="splide__slide">Kochkurse</li>
-                        <li class="splide__slide">Yogastudios</li>
-                        <li class="splide__slide">Pilatesstudios</li>
-                        <li class="splide__slide">Personal Trainer</li>
-                    </ul>
+            <!-- Burger Menu Icon for small screens -->
+            <button id="burgerMenu">
+                <img src="../assets/icons/menu.svg" alt="BurgerMenu Icon">
+            </button>
+            <!-- Navigation -->
+            <nav id="navLinks" class="decoration-primaryColor">
+                <a href="#">Funktionen</a>
+                <a href="#">Preise</a>
+                <a href="#" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">Kostenlose Demo</a>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileNav" class="hidden">
+                <div id="sideMenu" class="transform translate-x-full">
+                    <button id="closeMenu">
+                        <img src="../assets/icons/close.svg" alt="CloseMenu Icon">
+                    </button>
+                    <nav>
+                        <a href="">Funktionen</a>
+                        <a href="">Preise</a>
+                        <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">Kostenlose Demo</a>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero-course">
+            <div class="h-full relative z-10 py-10">
+                <h1 data-aos="fade-in" data-aos-duration="1000">
+                    Mehr Zeit für deine Leidenschaft - Optimiere deine Kursverwaltung mit Leichtigkeit
+                </h1>
+                <h2 data-aos="fade-in" data-aos-duration="3000">
+                    Das einfachste Verwaltungstool für
+                </h2>
+
+                <div id="marquee" class="splide" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="splide__track">
+                        <ul class="splide__list text-base sm:text-lg">
+                            <li class="splide__slide">Fitnessstudios</li>
+                            <li class="splide__slide">Kreativkurse</li>
+                            <li class="splide__slide">Kurse aller Art</li>
+                            <li class="splide__slide">Tanzkurse</li>
+                            <li class="splide__slide">Kochkurse</li>
+                            <li class="splide__slide">Yogastudios</li>
+                            <li class="splide__slide">Pilatesstudios</li>
+                            <li class="splide__slide">Personal Trainer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Why Section -->
     <section id="warum">
         <div data-aos="fade-in">
             <p>Warum</p>
-            <img src="../assets/images/Logo.png" class="w-36" alt="Kurserio Icon">
+            <!-- Custom Logo Icon -->
+            <span class="custom-logo">
+                <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-32">
+                <p class="absolute bottom-0 -right-1 text-base">Studio</p>
+            </span>
             <p>?</p>
         </div>
 
@@ -190,7 +197,8 @@
                 <h2>Verwalten</h2>
                 <h3>Strukturierte Buchungsübersicht</h3>
                 <p>
-                    Behalte alle Kurse und Buchungen auf einen Blick – intuitiv und professionell. Vorteil: Ein voller
+                    Behalte alle Kurse und Buchungen auf einen Blick – intuitiv und professionell. Vorteil: Ein
+                    voller
                     Kurskalender, der sich von selbst organisiert – kein zusätzlicher Aufwand nötig.
                 </p>
                 <ul>
@@ -206,7 +214,8 @@
                 <h2>Automatische Kommunikation</h2>
                 <h3>Kunden lieben es</h3>
                 <p>
-                    Automatische Erinnerungen und Bestätigungen reduzieren Absagen und sparen Zeit. Zudem verbessern Sie
+                    Automatische Erinnerungen und Bestätigungen reduzieren Absagen und sparen Zeit. Zudem verbessern
+                    Sie
                     die Zufriedenheit Ihrer Kunden – ohne manuelles Nachhaken.
                 </p>
                 <ul>
