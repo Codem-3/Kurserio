@@ -13,95 +13,99 @@
 
 <body class="h-screen">
 
-    <header>
-        <!-- Logo Icon -->
-        <img src="./assets/images/Logo.png" alt="Kurserio Icon">
+    <span class="relative">
 
-        <!-- Burger Menu Icon for small screens -->
-        <button id="burgerMenu">
-            <img src="./assets/icons/menu.svg" alt="BurgerMenu Icon">
-        </button>
+        <!-- Header -->
+        <header>
+            <!-- Logo Icon -->
+            <img src="./assets/images/Logo.png" alt="Kurserio Icon">
+            <!-- Burger Menu Icon for small screens -->
+            <button id="burgerMenu">
+                <img src="./assets/icons/menu.svg" alt="BurgerMenu Icon">
+            </button>
 
-        <!-- Navigation -->
-        <nav id="navLinks">
-            <a href="./pages/course.html" class="decoration-primaryColor">
-                Für Kursanbietende
-            </a>
-            <a href="./pages/company.html" class="decoration-secondaryColor">
-                Für Unternehmen
-            </a>
-            <a href="" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">
-                Kostenlose Demo
-            </a>
-        </nav>
+            <!-- Navigation -->
+            <nav id="navLinks">
+                <a href="./pages/course.html" class="decoration-primaryColor">
+                    Für Kursanbietende
+                </a>
+                <a href="./pages/company.html" class="decoration-secondaryColor">
+                    Für Unternehmen
+                </a>
+                <a href="">
+                    Kostenlose Demo
+                </a>
+            </nav>
 
-        <!-- Mobile Navigation -->
-        <div id="mobileNav" class="hidden">
-            <div id="sideMenu" class="transform translate-x-full">
-                <button id="closeMenu">
-                    <img src="./assets/icons/close.svg" alt="CloseMenu Icon">
-                </button>
-                <nav>
-                    <a href="./pages/course.html">Für Kursanbietende</a>
-                    <a href="./pages/company.html">Für Unternehmen</a>
-                    <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">Kostenlose Demo</a>
-                </nav>
+            <!-- Mobile Navigation -->
+            <div id="mobileNav" class="hidden">
+                <div id="sideMenu" class="transform translate-x-full">
+                    <button id="closeMenu">
+                        <img src="./assets/icons/close.svg" alt="CloseMenu Icon">
+                    </button>
+                    <nav>
+                        <a href="./pages/course.html">Für Kursanbietende</a>
+                        <a href="./pages/company.html">Für Unternehmen</a>
+                        <a href="">Kostenlose Demo</a>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Hero Section -->
-    <section id="hero-landing" class="hero-landing">
+        <!-- Hero Section -->
+        <section id="hero-landing" class="hero-landing">
+
+            <!-- Content -->
+            <div class="relative z-10 py-12">
+                <h1>
+                    Effiziente & intuitive Lösungen <br class="sm:block hidden">
+                    für Kursanbietende und für Unternehmen
+                </h1>
+
+                <!-- Splide Container -->
+                <div id="articles-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <!-- Section for Course Providers -->
+                            <li class="splide__slide">
+                                <article>
+                                    <p class="bg-primaryColor">Für Kursanbietende</p>
+                                    <h3>Flexibel. Einfach. Kundennah.</h3>
+                                    <h4>Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.</h4>
+                                    <h5>Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.</h5>
+                                    <button class="border-primaryColor">
+                                        Kurs-Tool <br class="hidden vsm:block">entdecken
+                                        <img src="./assets/icons/forLanding/arrowYellow.svg" alt="Arrow Icon">
+                                    </button>
+                                </article>
+                            </li>
+
+                            <!-- Section for Companies -->
+                            <li class="splide__slide">
+                                <article>
+                                    <p class="bg-secondaryColor">Für Unternehmen</p>
+                                    <h3>Individuell. Inspirierend. Begeisternd.</h3>
+                                    <h4>Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.</h4>
+                                    <h5>Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.</h5>
+                                    <button class="border-secondaryColor">
+                                        Benefit-Plattform <br class="hidden vsm:block">entdecken
+                                        <img src="./assets/icons/forLanding/arrowBlue.svg" alt="Arrow Icon">
+                                    </button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Video Background -->
         <video autoplay muted loop playsinline id="bg-video">
             <source src="./assets/videos/hero.mp4" type="video/mp4">
             <source src="path-to-your-video.webm" type="video/webm">
             Your browser does not support video playback.
         </video>
-
-        <!-- Content -->
-        <div class="relative z-10 py-12">
-            <h1>
-                Effiziente & intuitive Lösungen <br class="sm:block hidden">
-                für Kursanbietende und für Unternehmen
-            </h1>
-
-            <!-- Splide Container -->
-            <div id="articles-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <!-- Section for Course Providers -->
-                        <li class="splide__slide">
-                            <article>
-                                <p class="bg-primaryColor">Für Kursanbietende</p>
-                                <h3>Flexibel. Einfach. Kundennah.</h3>
-                                <h4>Optimieren Sie Ihre Kursbuchung – mehr Zeit für Ihre Leidenschaft.</h4>
-                                <h5>Das Tool, das Ihr Kursangebot optimal verwaltet und buchbar macht.</h5>
-                                <button class="border-primaryColor">
-                                    Kurs-Tool <br class="hidden vsm:block">entdecken
-                                    <img src="./assets/icons/forLanding/arrowYellow.svg" alt="Arrow Icon">
-                                </button>
-                            </article>
-                        </li>
-
-                        <!-- Section for Companies -->
-                        <li class="splide__slide">
-                            <article>
-                                <p class="bg-secondaryColor">Für Unternehmen</p>
-                                <h3>Individuell. Inspirierend. Begeisternd.</h3>
-                                <h4>Fördern Sie Mitarbeiterbindung und zeigen Sie individuelle Wertschätzung.</h4>
-                                <h5>Ermöglichen Sie Ihren Mitarbeitenden ein internes Portal für Benefits.</h5>
-                                <button class="border-secondaryColor">
-                                    Benefit-Plattform <br class="hidden vsm:block">entdecken
-                                    <img src="./assets/icons/forLanding/arrowBlue.svg" alt="Arrow Icon">
-                                </button>
-                            </article>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    </span>
 
     <!-- Footer -->
     <footer>
