@@ -890,6 +890,14 @@ footer>a{
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#navLinks a:not(:nth-child(3)):hover{
+  font-weight: 500;
+  text-decoration-thickness: 4px;
 }
 
 #navLinks a:nth-child(3), #sideMenu a:nth-child(3){
@@ -898,6 +906,17 @@ footer>a{
   background-color: rgb(231 223 216 / var(--tw-bg-opacity, 1));
   padding: 0.5rem;
   text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#navLinks a:nth-child(3):hover, #sideMenu a:nth-child(3):hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(178 174 160 / var(--tw-bg-opacity, 1));
+}
+
+#navLinks a:nth-child(3), #sideMenu a:nth-child(3) {
   font-family: "Fira Sans", serif;
 }
 
@@ -929,6 +948,16 @@ footer>a{
   #mobileNav>div{
     width: 50%;
   }
+}
+
+#mobileNav a:not(:nth-child(3)){
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#mobileNav a:not(:nth-child(3)):hover{
+  font-weight: 500;
 }
 
 #mobileNav>div>button{
@@ -971,6 +1000,43 @@ footer>a{
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Footer Links Animations */
+
+#animtaed-text a {
+  background-image: linear-gradient(to right,
+      #8d8a7e,
+      #8d8a7e 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:before {
+  content: '';
+  background: #ebded4;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:hover {
+  background-position: 0;
+}
+
+#animtaed-text a:hover::before {
+  width: 100%;
 }
 
 /* Hide default scrollbar */
@@ -1147,10 +1213,9 @@ li>article>button{
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-li>article>button:hover{
-  background-color: rgb(255 255 255 / 0.5);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 460px){
@@ -1887,39 +1952,12 @@ li>article>button img{
   margin-left: 1.25rem;
 }
 
-#animtaed-text a {
-  background-image: linear-gradient(to right,
-      #8d8a7e,
-      #8d8a7e 50%,
-      #000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+.hover\:bg-primaryColor\/40:hover{
+  background-color: rgb(221 244 135 / 0.4);
 }
 
-#animtaed-text a:before {
-  content: '';
-  background: #ebded4;
-  display: block;
-  position: absolute;
-  bottom: 1px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
-
-#animtaed-text a:hover {
-  background-position: 0;
-}
-
-#animtaed-text a:hover::before {
-  width: 100%;
+.hover\:bg-secondaryColor\/40:hover{
+  background-color: rgb(190 196 237 / 0.4);
 }
 
 @media (min-width: 460px){

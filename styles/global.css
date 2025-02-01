@@ -49,11 +49,11 @@ footer>a {
 }
 
 #navLinks a:not(:nth-child(3)) {
-  @apply underline underline-offset-4 decoration-2
+  @apply underline underline-offset-4 decoration-2 hover:decoration-4 hover:font-medium transition-all
 }
 
 #navLinks a:nth-child(3), #sideMenu a:nth-child(3) {
-  @apply bg-[#e7dfd8] text-center p-2 rounded-full;
+  @apply bg-[#e7dfd8] hover:bg-fourthlyColor text-center p-2 rounded-full transition-all;
   font-family: "Fira Sans", serif;
 }
 
@@ -63,6 +63,10 @@ footer>a {
 
 #mobileNav>div {
   @apply absolute right-0 bg-white/95 text-center shadow-lg w-4/5 vsm:w-1/2 h-full p-5 transition-transform duration-300
+}
+
+#mobileNav a:not(:nth-child(3)) {
+  @apply hover:font-medium transition-all
 }
 
 #mobileNav>div>button {
@@ -79,6 +83,42 @@ footer>a {
 
 #bg-video {
   @apply absolute top-0 left-0 w-full h-full object-cover -z-10;
+}
+
+/* Footer Links Animations */
+#animtaed-text a {
+  background-image: linear-gradient(to right,
+      #8d8a7e,
+      #8d8a7e 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:before {
+  content: '';
+  background: #ebded4;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:hover {
+  background-position: 0;
+}
+
+#animtaed-text a:hover::before {
+  width: 100%;
 }
 
 /* Hide default scrollbar */
@@ -135,7 +175,7 @@ li>article>h5 {
 }
 
 li>article>button {
-  @apply relative flex justify-center mx-auto mt-10 items-center gap-2 border-[6px] bg-thirdlyColor hover:bg-white/50 w-full max-w-72 vsm:max-w-56 py-3 vsm:py-1 rounded-full shadow-inner
+  @apply relative flex justify-center mx-auto mt-10 items-center gap-2 border-[6px] bg-thirdlyColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-1 rounded-full shadow-inner transition-all
 }
 
 li>article>button img {
@@ -355,46 +395,4 @@ li>article>button img {
 
 #splide-subscription li>div>button>p {
   @apply ml-5
-}
-
-
-
-
-
-
-
-
-#animtaed-text a {
-  background-image: linear-gradient(to right,
-      #8d8a7e,
-      #8d8a7e 50%,
-      #000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-#animtaed-text a:before {
-  content: '';
-  background: #ebded4;
-  display: block;
-  position: absolute;
-  bottom: 1px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
-
-#animtaed-text a:hover {
-  background-position: 0;
-}
-
-#animtaed-text a:hover::before {
-  width: 100%;
 }
