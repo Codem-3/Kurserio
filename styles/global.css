@@ -270,7 +270,7 @@ li>article>button img {
 
 /* Benefits Icons Section */
 #benefits {
-  @apply flex flex-wrap justify-evenly items-start text-center p-5 md:p-10 md:text-lg
+  @apply flex flex-wrap justify-evenly items-start text-center p-5 md:p-10 md:text-lg overflow-hidden
 }
 
 #benefits>div {

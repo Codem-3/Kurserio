@@ -588,6 +588,14 @@ video {
   bottom: 0px;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.right-0{
+  right: 0px;
+}
+
 .top-0{
   top: 0px;
 }
@@ -661,10 +669,6 @@ video {
 
 .items-start{
   align-items: flex-start;
-}
-
-.items-center{
-  align-items: center;
 }
 
 .rounded-3xl{
@@ -1529,6 +1533,7 @@ li>article>button img{
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
+  overflow: hidden;
   padding: 1.25rem;
   text-align: center;
 }
