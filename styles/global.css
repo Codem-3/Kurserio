@@ -32,13 +32,14 @@ header>img {
 }
 
 footer {
-  @apply flex justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 vsm:gap-5 mr-2 sm:mr-10 xl:mr-20 transition-all h-10
+  @apply flex justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 vsm:gap-5 mx-2 tiny:mx-5 lg:mx-14 transition-all h-16
 }
 
 footer>a {
-  @apply hover:underline underline-offset-4 decoration-primaryColor z-40
+  @apply z-40
 }
 
+/* Responsive Header For Mobile Screen */
 #burgerMenu {
   @apply block md:hidden focus:outline-none
 }
@@ -98,8 +99,8 @@ footer>a {
 /*! -------------------- Landing Page -------------------- */
 
 #hero-landing {
-  @apply text-center relative;
-  height: calc(100vh - 120px);
+  @apply text-center relative mx-2 tiny:mx-5 lg:mx-14;
+  height: calc(100vh - 144px);
 }
 
 /* Responsive hero section on screens smaller than 340px */
@@ -110,31 +111,31 @@ footer>a {
 }
 
 #hero-landing h1 {
-  @apply text-left text-xl tiny:text-2xl md:text-3xl lg:text-5xl lg:leading-relaxed font-semibold sm:text-nowrap mx-2 tiny:mx-5 lg:mx-10 xl:mx-20
+  @apply md:text-left text-xl tiny:text-2xl sm:text-3xl md:text-4xl xl:text-5xl xl:leading-normal font-semibold
 }
 
 li>article {
-  @apply text-left my-5 w-full max-w-[600px] text-black mx-auto
+  @apply md:text-left m-5 md:max-w-[450px] 2xl:max-w-[600px] text-black
 }
 
 li>article>p {
-  @apply text-center py-3 px-4 rounded-3xl w-full my-10 font-medium
+  @apply text-center p-4 rounded-3xl w-full my-10 shadow
 }
 
 li>article>h3 {
-  @apply text-lg vsm:text-xl font-semibold
+  @apply vsm:text-xl font-semibold
 }
 
 li>article>h4 {
-  @apply text-lg vsm:text-xl font-semibold my-3
+  @apply vsm:text-xl font-semibold my-3
 }
 
 li>article>h5 {
-  @apply text-lg vsm:text-xl text-left font-normal
+  @apply vsm:text-xl font-normal
 }
 
 li>article>button {
-  @apply relative flex justify-center mx-auto mt-10 items-center gap-2 border-4 bg-thirdlyColor w-full max-w-72 vsm:max-w-56 py-3 vsm:py-2 rounded-full
+  @apply relative flex justify-center mx-auto mt-10 items-center gap-2 border-[6px] bg-thirdlyColor hover:bg-white/50 w-full max-w-72 vsm:max-w-56 py-3 vsm:py-1 rounded-full shadow-inner
 }
 
 li>article>button img {
@@ -143,8 +144,9 @@ li>article>button img {
 
 
 
-/*! -------------------- Landing Page -------------------- */
+/*! -------------------- Für Kursanbietende Page -------------------- */
 
+/* HeroSection */
 #hero-course {
   @apply relative text-center shadow-inner mt-20
 }
@@ -173,6 +175,7 @@ li>article>button img {
   margin-right: 20px;
 }
 
+/* WARUM Kurserio Section */
 #warum {
   @apply md:p-10 bg-[#f4f4f4]
 }
@@ -209,6 +212,7 @@ li>article>button img {
   @apply border-[15px] border-primaryColor/45
 }
 
+/* Benefits Icons Section */
 #benefits {
   @apply flex flex-wrap justify-evenly items-start text-center p-5 md:p-10 md:text-lg
 }
@@ -221,6 +225,7 @@ li>article>button img {
   @apply w-14 vsm:w-20
 }
 
+/* Features Category Section */
 #features {
   @apply bg-[#f4f4f4] py-5 p-2 vsm:p-5 md:p-10
 }
@@ -261,6 +266,7 @@ li>article>button img {
   @apply list-disc p-5
 }
 
+/* Still have questions Section */
 #questions h1, h2 {
   @apply p-5 text-xl md:text-2xl text-center
 }
@@ -273,6 +279,7 @@ li>article>button img {
   @apply absolute right-1
 }
 
+/* Faire Preise Section */
 #fair {
   @apply p-5 lg:p-10
 }
@@ -305,6 +312,7 @@ li>article>button img {
   @apply absolute top-1 md:-top-1 -right-4
 }
 
+/* Subscription Plans Section */
 #splide-subscription {
   @apply my-5 px-5 md:px-20
 }
@@ -347,4 +355,46 @@ li>article>button img {
 
 #splide-subscription li>div>button>p {
   @apply ml-5
+}
+
+
+
+
+
+
+
+
+#animtaed-text a {
+  background-image: linear-gradient(to right,
+      #8d8a7e,
+      #8d8a7e 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:before {
+  content: '';
+  background: #ebded4;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:hover {
+  background-position: 0;
+}
+
+#animtaed-text a:hover::before {
+  width: 100%;
 }

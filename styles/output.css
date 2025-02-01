@@ -803,9 +803,10 @@ header>img{
 }
 
 footer{
+  margin-left: 0.5rem;
   margin-right: 0.5rem;
   display: flex;
-  height: 2.5rem;
+  height: 4rem;
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
@@ -816,6 +817,13 @@ footer{
   transition-duration: 150ms;
 }
 
+@media (min-width: 410px){
+  footer{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
 @media (min-width: 460px){
   footer{
     gap: 1.25rem;
@@ -824,29 +832,25 @@ footer{
   }
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   footer{
-    margin-right: 2.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1024px){
   footer{
-    margin-right: 5rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 }
 
 footer>a{
   z-index: 40;
-  text-decoration-color: #ddf487;
-  text-underline-offset: 4px;
 }
 
-footer>a:hover{
-  text-decoration-line: underline;
-}
+/* Responsive Header For Mobile Screen */
 
 #burgerMenu{
   display: block;
@@ -857,7 +861,7 @@ footer>a:hover{
   outline-offset: 2px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #burgerMenu{
     display: none;
   }
@@ -870,7 +874,7 @@ footer>a:hover{
   gap: 1rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #navLinks{
     display: flex;
   }
@@ -991,8 +995,27 @@ footer>a:hover{
 
 #hero-landing{
   position: relative;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-align: center;
-  height: calc(100vh - 120px);
+}
+
+@media (min-width: 410px){
+  #hero-landing{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  #hero-landing{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+}
+
+#hero-landing {
+  height: calc(100vh - 144px);
 }
 
 /* Responsive hero section on screens smaller than 340px */
@@ -1004,9 +1027,6 @@ footer>a:hover{
 }
 
 #hero-landing h1{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  text-align: left;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -1014,52 +1034,50 @@ footer>a:hover{
 
 @media (min-width: 410px){
   #hero-landing h1{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width: 640px){
-  #hero-landing h1{
-    text-wrap: nowrap;
-  }
-}
-
-@media (min-width: 768px){
+@media (min-width: 690px){
   #hero-landing h1{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 880px){
   #hero-landing h1{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    font-size: 3rem;
-    line-height: 1.625;
+    text-align: left;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (min-width: 1280px){
   #hero-landing h1{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    font-size: 3rem;
+    line-height: 1.5;
   }
 }
 
 li>article{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 600px;
-  text-align: left;
+  margin: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 880px){
+  li>article{
+    max-width: 450px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1536px){
+  li>article{
+    max-width: 600px;
+  }
 }
 
 li>article>p{
@@ -1067,17 +1085,14 @@ li>article>p{
   margin-bottom: 2.5rem;
   width: 100%;
   border-radius: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
   text-align: center;
-  font-weight: 500;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 li>article>h3{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 600;
 }
 
@@ -1091,8 +1106,6 @@ li>article>h3{
 li>article>h4{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 600;
 }
 
@@ -1104,9 +1117,6 @@ li>article>h4{
 }
 
 li>article>h5{
-  text-align: left;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 400;
 }
 
@@ -1129,18 +1139,25 @@ li>article>button{
   justify-content: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  border-width: 4px;
+  border-width: 6px;
   --tw-bg-opacity: 1;
   background-color: rgb(235 222 212 / var(--tw-bg-opacity, 1));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+li>article>button:hover{
+  background-color: rgb(255 255 255 / 0.5);
 }
 
 @media (min-width: 460px){
   li>article>button{
     max-width: 14rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 }
 
@@ -1149,7 +1166,9 @@ li>article>button img{
   right: 0px;
 }
 
-/*! -------------------- Landing Page -------------------- */
+/*! -------------------- Für Kursanbietende Page -------------------- */
+
+/* HeroSection */
 
 #hero-course{
   position: relative;
@@ -1169,14 +1188,14 @@ li>article>button img{
   line-height: 1.625;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #hero-course>div>h1{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #hero-course>div>h1{
     margin: 2rem;
     font-size: 1.875rem;
@@ -1206,7 +1225,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #hero-course>div>h2{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1229,12 +1248,14 @@ li>article>button img{
   margin-right: 20px;
 }
 
+/* WARUM Kurserio Section */
+
 #warum{
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #warum{
     padding: 2.5rem;
   }
@@ -1252,7 +1273,7 @@ li>article>button img{
   text-transform: uppercase;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #warum>div{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1313,14 +1334,14 @@ li>article>button img{
   margin: 1rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #warum>article p{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #warum>article p{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1370,6 +1391,8 @@ li>article>button img{
   border-color: rgb(221 244 135 / 0.45);
 }
 
+/* Benefits Icons Section */
+
 #benefits{
   display: flex;
   flex-wrap: wrap;
@@ -1379,7 +1402,7 @@ li>article>button img{
   text-align: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #benefits{
     padding: 2.5rem;
     font-size: 1.125rem;
@@ -1407,6 +1430,8 @@ li>article>button img{
   }
 }
 
+/* Features Category Section */
+
 #features{
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
@@ -1421,7 +1446,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #features{
     padding: 2.5rem;
   }
@@ -1442,14 +1467,14 @@ li>article>button img{
   }
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #features>h1{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #features>h1{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1544,7 +1569,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #features>article h2{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1559,7 +1584,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #features>article h3{
     font-size: 3rem;
     line-height: 1;
@@ -1573,7 +1598,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #features>article p{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1591,6 +1616,8 @@ li>article>button img{
   padding: 1.25rem;
 }
 
+/* Still have questions Section */
+
 #questions h1, h2{
   padding: 1.25rem;
   text-align: center;
@@ -1598,7 +1625,7 @@ li>article>button img{
   line-height: 1.75rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #questions h1, h2{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1627,7 +1654,7 @@ li>article>button img{
   text-align: center;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #questions>button{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -1638,6 +1665,8 @@ li>article>button img{
   position: absolute;
   right: 0.25rem;
 }
+
+/* Faire Preise Section */
 
 #fair{
   padding: 1.25rem;
@@ -1656,7 +1685,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #fair>h1{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1672,7 +1701,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #fair>h2{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -1689,7 +1718,7 @@ li>article>button img{
   gap: 1.25rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 690px){
   #fair>div{
     gap: 2.5rem;
   }
@@ -1710,7 +1739,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #fair>div>span{
     gap: 0.5rem;
   }
@@ -1720,7 +1749,7 @@ li>article>button img{
   width: 2rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #fair>div>span>img{
     width: auto;
   }
@@ -1746,7 +1775,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #fair>div>span>p{
     width: 18rem;
     font-size: 1.25rem;
@@ -1760,11 +1789,13 @@ li>article>button img{
   right: -1rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #fair>div>span>p>img{
     top: -0.25rem;
   }
 }
+
+/* Subscription Plans Section */
 
 #splide-subscription{
   margin-top: 1.25rem;
@@ -1773,7 +1804,7 @@ li>article>button img{
   padding-right: 1.25rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 880px){
   #splide-subscription{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1856,20 +1887,57 @@ li>article>button img{
   margin-left: 1.25rem;
 }
 
+#animtaed-text a {
+  background-image: linear-gradient(to right,
+      #8d8a7e,
+      #8d8a7e 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:before {
+  content: '';
+  background: #ebded4;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#animtaed-text a:hover {
+  background-position: 0;
+}
+
+#animtaed-text a:hover::before {
+  width: 100%;
+}
+
 @media (min-width: 460px){
   .vsm\:block{
     display: block;
   }
 }
 
-@media (min-width: 640px){
-  .sm\:block{
-    display: block;
-  }
-
+@media (min-width: 690px){
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 880px){
+  .md\:ml-auto{
+    margin-left: auto;
   }
 }
 

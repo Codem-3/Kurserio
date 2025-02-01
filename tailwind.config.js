@@ -9,6 +9,11 @@ module.exports = {
                 fourthlyColor: "#b2aea0", // Custom third color
             },
             screens: {
+                '2xl': '1536px',
+                'xl': '1280px',
+                'lg': '1024px',
+                'md': '880px',
+                'sm': '690px',
                 'vsm': '460px',  // Breakpoint for very small screens
                 'tiny': '410px', // Breakpoint for tiny screens
             },
