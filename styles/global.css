@@ -6,9 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  outline: 1px solid red;
-}
 
 /*! -------------------- Global Styles -------------------- */
 
@@ -321,7 +318,7 @@ li>article>button img {
 
 /* Benefits Icons Section */
 #benefits {
-  @apply flex flex-wrap justify-evenly items-start text-center p-5 md:p-10 md:text-lg overflow-hidden
+  @apply flex flex-wrap justify-center items-start text-center gap-4 sm:gap-9 md:text-lg overflow-hidden bg-[#f4f4f4]
 }
 
 #benefits>div {

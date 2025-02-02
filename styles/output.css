@@ -798,10 +798,6 @@ video {
   text-decoration-color: #bec4ed;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 /*! -------------------- Global Styles -------------------- */
 
 body {
@@ -1618,15 +1614,22 @@ li>article>button img{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1rem;
   overflow: hidden;
-  padding: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
   text-align: center;
+}
+
+@media (min-width: 690px){
+  #benefits{
+    gap: 2.25rem;
+  }
 }
 
 @media (min-width: 910px){
   #benefits{
-    padding: 2.5rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
