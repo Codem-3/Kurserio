@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /*! -------------------- Global Styles -------------------- */
@@ -57,7 +57,7 @@ footer>a {
 }
 
 #navLinks a:not(:nth-child(3)) {
-  @apply underline underline-offset-4 decoration-2 hover:decoration-4 hover:font-medium transition-all
+  @apply underline underline-offset-4 decoration-2 hover:decoration-4 transition-all
 }
 
 #navLinks a:nth-child(3), #sideMenu a:nth-child(3) {
@@ -146,7 +146,7 @@ footer>a {
 
 /* Custom STUDIO Logo */
 .custom-logo {
-  @apply font-bold uppercase relative h-[50px] w-[155px]
+  @apply font-bold uppercase relative h-[50px]
 }
 
 .custom-logo img {
@@ -205,31 +205,82 @@ li>article>button img {
 
 /* HeroSection */
 #hero-course {
-  @apply relative text-center shadow-inner pt-20
+  @apply relative text-center shadow-inner pt-20;
 }
 
 #hero-course>div>h1 {
-  @apply text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-relaxed font-semibold m-2 md:m-8 lg:m-12
+  @apply text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-semibold m-2 md:m-8 lg:m-12
 }
-
 
 #hero-course>div>h2 {
-  @apply sm:text-xl font-semibold text-nowrap my-8
+  @apply text-base sm:text-xl font-semibold my-3
 }
 
-/* Styling for marquee slides within Splide */
-#marquee .splide__slide {
+#hero-course>div li {
+  @apply text-base sm:text-xl font-semibold
+}
+
+/* Marquee Effect */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 6px;
+  cursor: default;
+}
+
+.marquee-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
+  width: 200%;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content li {
+  flex: 0 0 auto;
+  width: 400px;
+  /* Responsive width */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
   color: #ddf487;
-  text-transform: uppercase;
-  font-weight: 600;
-  background-color: #b2aea0;
-  border-radius: 60px;
-  padding: 10px 20px;
-  margin-right: 20px;
+}
+
+/* Pause animation on hover */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 1200px) {
+  .marquee-content li {
+    width: 300px;
+    /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-content li {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-content li {
+    width: 180px;
+    /* Adjust width for very small screens */
+  }
 }
 
 /* WARUM Kurserio Section */
@@ -238,7 +289,7 @@ li>article>button img {
 }
 
 #warum>div {
-  @apply flex justify-center items-center text-2xl sm:text-4xl font-bold gap-5 mb-10
+  @apply flex justify-center items-center text-xl tiny:text-2xl sm:text-4xl font-bold gap-2 tiny:gap-5 mb-10
 }
 
 #warum>article {

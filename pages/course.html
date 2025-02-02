@@ -26,7 +26,7 @@
         <!-- Header -->
         <header class="fixed top-0 left-0 right-0">
             <!-- Custom Logo Icon -->
-            <a href="../index.html" class="custom-logo">
+            <a href="../index.html" class="custom-logo w-[155px]">
                 <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-32 vsm:w-36">
                 <p class="absolute -bottom-0 vsm:-bottom-1 -right-0 vsm:-right-4 vsm:text-lg">Studio</p>
             </a>
@@ -37,8 +37,8 @@
             </button>
             <!-- Navigation -->
             <nav id="navLinks" class="decoration-primaryColor">
-                <a href="#">Funktionen</a>
-                <a href="#">Preise</a>
+                <a href="#" class="hover:text-[#a8b968]">Funktionen</a>
+                <a href="#" class="hover:text-[#a8b968]">Preise</a>
                 <a href="#" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">Kostenlose Demo</a>
             </nav>
 
@@ -57,29 +57,35 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
         <section id="hero-course">
-            <div class="h-full relative z-10 py-10">
+            <div class="h-full relative z-10 pt-10">
                 <h1 data-aos="fade-in" data-aos-duration="1000">
                     Mehr Zeit für deine Leidenschaft - Optimiere deine Kursverwaltung mit Leichtigkeit
                 </h1>
-                <h2 data-aos="fade-in" data-aos-duration="3000">
+                <h2 data-aos="fade-in" data-aos-duration="1000">
                     Das einfachste Verwaltungstool für
                 </h2>
 
-                <div id="marquee" class="splide" data-aos="zoom-in" data-aos-duration="700">
-                    <div class="splide__track">
-                        <ul class="splide__list text-base sm:text-lg">
-                            <li class="splide__slide">Fitnessstudios</li>
-                            <li class="splide__slide">Kreativkurse</li>
-                            <li class="splide__slide">Kurse aller Art</li>
-                            <li class="splide__slide">Tanzkurse</li>
-                            <li class="splide__slide">Kochkurse</li>
-                            <li class="splide__slide">Yogastudios</li>
-                            <li class="splide__slide">Pilatesstudios</li>
-                            <li class="splide__slide">Personal Trainer</li>
-                        </ul>
-                    </div>
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li>Fitnessstudios</li>
+                        <li>Kreativkurse</li>
+                        <li>Kurse aller Art</li>
+                        <li>Tanzkurse</li>
+                        <li>Kochkurse</li>
+                        <li>Yogastudios</li>
+                        <li>Pilatesstudios</li>
+                        <li>Personal Trainer</li>
+                        <!-- Duplicate items for smooth infinite loop -->
+                        <li>Fitnessstudios</li>
+                        <li>Kreativkurse</li>
+                        <li>Kurse aller Art</li>
+                        <li>Tanzkurse</li>
+                        <li>Kochkurse</li>
+                        <li>Yogastudios</li>
+                        <li>Pilatesstudios</li>
+                        <li>Personal Trainer</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -90,9 +96,9 @@
         <div data-aos="fade-in">
             <p>Warum</p>
             <!-- Custom Logo Icon -->
-            <span class="custom-logo">
-                <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-32">
-                <p class="absolute bottom-0 -right-1 text-base">Studio</p>
+            <span class="custom-logo w-28 tiny:w-[155px]">
+                <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-24 tiny:w-32">
+                <p class="absolute bottom-2 tiny:bottom-0 right-0 tiny:-right-1 text-sm tiny:text-base">Studio</p>
             </span>
             <p>?</p>
         </div>
@@ -523,7 +529,6 @@
 <script src="../scripts/headerHandler.js"></script> <!-- Handle Responsive Header -->
 <script src="../scripts/featureLinks.js"></script> <!-- Feature Links -->
 <script src="../scripts/slideHandler.js"></script> <!-- Splide Slider -->
-<script src="../scripts/marqueeHandler.js"></script> <!-- Marquee Slider Effect -->
 <!-- AOS Animations -->
 <script>
     AOS.init({

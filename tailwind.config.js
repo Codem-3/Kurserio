@@ -15,7 +15,7 @@ module.exports = {
                 'md': '880px',
                 'sm': '690px',
                 'vsm': '460px',  // Breakpoint for very small screens
-                'tiny': '410px', // Breakpoint for tiny screens
+                'tiny': '360px', // Breakpoint for tiny screens
             },
         },
     },

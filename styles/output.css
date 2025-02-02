@@ -580,12 +580,8 @@ video {
   right: -0px;
 }
 
-.-right-1{
-  right: -0.25rem;
-}
-
-.bottom-0{
-  bottom: 0px;
+.bottom-2{
+  bottom: 0.5rem;
 }
 
 .left-0{
@@ -650,8 +646,20 @@ video {
   width: 3.5rem;
 }
 
+.w-24{
+  width: 6rem;
+}
+
+.w-28{
+  width: 7rem;
+}
+
 .w-32{
   width: 8rem;
+}
+
+.w-\[155px\]{
+  width: 155px;
 }
 
 .max-w-\[700px\]{
@@ -733,11 +741,6 @@ video {
   padding: 0.5rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -746,6 +749,10 @@ video {
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -757,14 +764,14 @@ video {
   line-height: 2rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -792,7 +799,7 @@ video {
 }
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /*! -------------------- Global Styles -------------------- */
@@ -869,7 +876,7 @@ footer{
   transition-duration: 150ms;
 }
 
-@media (min-width: 410px){
+@media (min-width: 360px){
   footer{
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -948,7 +955,6 @@ footer>a{
 }
 
 #navLinks a:not(:nth-child(3)):hover{
-  font-weight: 500;
   text-decoration-thickness: 4px;
 }
 
@@ -1114,7 +1120,6 @@ footer>a{
 .custom-logo{
   position: relative;
   height: 50px;
-  width: 155px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1136,7 +1141,7 @@ footer>a{
   text-align: center;
 }
 
-@media (min-width: 410px){
+@media (min-width: 360px){
   #hero-landing{
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -1168,7 +1173,7 @@ footer>a{
   font-weight: 600;
 }
 
-@media (min-width: 410px){
+@media (min-width: 360px){
   #hero-landing h1{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1320,7 +1325,6 @@ li>article>button img{
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
-  line-height: 1.625;
 }
 
 @media (min-width: 690px){
@@ -1354,9 +1358,10 @@ li>article>button img{
 }
 
 #hero-course>div>h2{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-wrap: nowrap;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 600;
 }
 
@@ -1367,20 +1372,84 @@ li>article>button img{
   }
 }
 
-/* Styling for marquee slides within Splide */
-
-#marquee .splide__slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  color: #ddf487;
-  text-transform: uppercase;
+#hero-course>div li{
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 600;
-  background-color: #b2aea0;
-  border-radius: 60px;
-  padding: 10px 20px;
-  margin-right: 20px;
+}
+
+@media (min-width: 690px){
+  #hero-course>div li{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Marquee Effect */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 6px;
+  cursor: default;
+}
+
+.marquee-content {
+  display: flex;
+  width: 200%;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content li {
+  flex: 0 0 auto;
+  width: 400px;
+  /* Responsive width */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  color: #ddf487;
+}
+
+/* Pause animation on hover */
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Media Queries for Different Screen Sizes */
+
+@media (max-width: 1200px) {
+  .marquee-content li {
+    width: 300px;
+    /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-content li {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-content li {
+    width: 180px;
+    /* Adjust width for very small screens */
+  }
 }
 
 /* WARUM Kurserio Section */
@@ -1403,10 +1472,18 @@ li>article>button img{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
+}
+
+@media (min-width: 360px){
+  #warum>div{
+    gap: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 690px){
@@ -1996,7 +2073,7 @@ li>article>button img{
   gap: 0.75rem;
 }
 
-@media (min-width: 410px){
+@media (min-width: 360px){
   #splide-subscription li>div>div{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2032,6 +2109,39 @@ li>article>button img{
   background-color: rgb(190 196 237 / 0.4);
 }
 
+.hover\:text-\[\#6c73a1\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(108 115 161 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#a8b968\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(168 185 104 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 360px){
+  .tiny\:-right-1{
+    right: -0.25rem;
+  }
+
+  .tiny\:bottom-0{
+    bottom: 0px;
+  }
+
+  .tiny\:w-32{
+    width: 8rem;
+  }
+
+  .tiny\:w-\[155px\]{
+    width: 155px;
+  }
+
+  .tiny\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 @media (min-width: 460px){
   .vsm\:-bottom-1{
     bottom: -0.25rem;
@@ -2050,13 +2160,6 @@ li>article>button img{
   }
 
   .vsm\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 690px){
-  .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
