@@ -920,7 +920,7 @@ footer>a{
   outline-offset: 2px;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #burgerMenu{
     display: none;
   }
@@ -933,7 +933,7 @@ footer>a{
   gap: 1rem;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #navLinks{
     display: flex;
   }
@@ -1187,7 +1187,7 @@ footer>a{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #hero-landing h1{
     text-align: left;
     font-size: 2.25rem;
@@ -1208,7 +1208,7 @@ li>article{
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   li>article{
     max-width: 450px;
     text-align: left;
@@ -1334,7 +1334,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #hero-course>div>h1{
     margin: 2rem;
     font-size: 1.875rem;
@@ -1396,6 +1396,7 @@ li>article>button img{
           backdrop-filter: blur(5px);
   padding: 6px;
   cursor: default;
+  text-transform: uppercase;
 }
 
 .marquee-content {
@@ -1435,7 +1436,6 @@ li>article>button img{
 @media (max-width: 1200px) {
   .marquee-content li {
     width: 300px;
-    /* Adjust width for medium screens */
   }
 }
 
@@ -1448,7 +1448,6 @@ li>article>button img{
 @media (max-width: 480px) {
   .marquee-content li {
     width: 180px;
-    /* Adjust width for very small screens */
   }
 }
 
@@ -1461,7 +1460,7 @@ li>article>button img{
   padding-bottom: 1.75rem;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #warum{
     padding: 2.5rem;
   }
@@ -1494,26 +1493,35 @@ li>article>button img{
 }
 
 #warum>article{
+  margin: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 1.25rem;
 }
 
-@media (min-width: 1280px){
+@media (min-width: 910px){
   #warum>article{
     flex-direction: row;
   }
 }
 
+@media (min-width: 1024px){
+  #warum>article{
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
 #warum>article>div{
   display: flex;
+  max-width: 430px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 460px){
@@ -1522,17 +1530,9 @@ li>article>button img{
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 910px){
   #warum>article>div{
-    max-width: 560px;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1536px){
-  #warum>article>div{
-    max-width: -moz-max-content;
-    max-width: max-content;
+    max-width: 400px;
   }
 }
 
@@ -1543,33 +1543,25 @@ li>article>button img{
   font-weight: 600;
 }
 
-#warum>article p{
-  margin: 1rem;
-}
-
-@media (min-width: 690px){
-  #warum>article p{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 880px){
-  #warum>article p{
+@media (min-width: 910px){
+  #warum>article h1{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 690px){
   #warum>article p{
-    line-height: 1.625;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 910px){
   #warum>article p{
-    margin: 0px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    line-height: 1.625;
   }
 }
 
@@ -1579,7 +1571,7 @@ li>article>button img{
   margin-right: auto;
   display: flex;
   width: 100%;
-  max-width: 13rem;
+  max-width: 11rem;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -1589,9 +1581,19 @@ li>article>button img{
   border-color: rgb(221 244 135 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
   background-color: rgb(235 222 212 / var(--tw-bg-opacity, 1));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 600;
+}
+
+@media (min-width: 460px){
+  #warum>article button{
+    max-width: 12rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 #warum>article button>img{
@@ -1602,6 +1604,12 @@ li>article>button img{
 #warum>article>img{
   border-width: 15px;
   border-color: rgb(221 244 135 / 0.45);
+}
+
+@media (min-width: 460px){
+  #warum>article>img{
+    max-width: 430px;
+  }
 }
 
 /* Benefits Icons Section */
@@ -1616,7 +1624,7 @@ li>article>button img{
   text-align: center;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #benefits{
     padding: 2.5rem;
     font-size: 1.125rem;
@@ -1660,7 +1668,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #features{
     padding: 2.5rem;
   }
@@ -1688,7 +1696,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #features>h1{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1839,7 +1847,7 @@ li>article>button img{
   line-height: 1.75rem;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #questions h1, h2{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1899,7 +1907,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #fair>h1{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1915,7 +1923,7 @@ li>article>button img{
   font-weight: 600;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #fair>h2{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -1953,7 +1961,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #fair>div>span{
     gap: 0.5rem;
   }
@@ -1963,7 +1971,7 @@ li>article>button img{
   width: 2rem;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #fair>div>span>img{
     width: auto;
   }
@@ -1989,7 +1997,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #fair>div>span>p{
     width: 18rem;
     font-size: 1.25rem;
@@ -2003,7 +2011,7 @@ li>article>button img{
   right: -1rem;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #fair>div>span>p>img{
     top: -0.25rem;
   }
@@ -2018,7 +2026,7 @@ li>article>button img{
   padding-right: 1.25rem;
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   #splide-subscription{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2165,7 +2173,7 @@ li>article>button img{
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 910px){
   .md\:ml-auto{
     margin-left: auto;
   }

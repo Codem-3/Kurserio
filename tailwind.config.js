@@ -12,7 +12,7 @@ module.exports = {
                 '2xl': '1536px',
                 'xl': '1280px',
                 'lg': '1024px',
-                'md': '880px',
+                'md': '910px',
                 'sm': '690px',
                 'vsm': '460px',  // Breakpoint for very small screens
                 'tiny': '360px', // Breakpoint for tiny screens

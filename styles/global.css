@@ -229,6 +229,7 @@ li>article>button img {
   backdrop-filter: blur(5px);
   padding: 6px;
   cursor: default;
+  text-transform: uppercase;
 }
 
 .marquee-content {
@@ -266,7 +267,6 @@ li>article>button img {
 @media (max-width: 1200px) {
   .marquee-content li {
     width: 300px;
-    /* Adjust width for medium screens */
   }
 }
 
@@ -279,7 +279,6 @@ li>article>button img {
 @media (max-width: 480px) {
   .marquee-content li {
     width: 180px;
-    /* Adjust width for very small screens */
   }
 }
 
@@ -293,23 +292,23 @@ li>article>button img {
 }
 
 #warum>article {
-  @apply flex flex-col xl:flex-row gap-5 justify-around items-center
+  @apply flex flex-col md:flex-row gap-5 lg:gap-20 justify-between lg:justify-center items-center m-5
 }
 
 #warum>article>div {
-  @apply flex flex-col justify-center items-center text-center xl:text-left gap-2 vsm:gap-5 xl:max-w-[560px] 2xl:max-w-max
+  @apply flex flex-col justify-center items-center text-left gap-2 vsm:gap-5 max-w-[430px] md:max-w-[400px]
 }
 
 #warum>article h1 {
-  @apply text-xl font-semibold w-full
+  @apply text-xl md:text-2xl font-semibold w-full
 }
 
 #warum>article p {
-  @apply sm:text-xl md:text-2xl lg:leading-relaxed m-4 xl:m-0
+  @apply sm:text-lg md:text-xl md:leading-relaxed
 }
 
 #warum>article button {
-  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-52 py-3 rounded-full font-semibold
+  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-44 vsm:max-w-48 py-2 text-sm vsm:text-base rounded-full font-semibold
 }
 
 #warum>article button>img {
@@ -317,7 +316,7 @@ li>article>button img {
 }
 
 #warum>article>img {
-  @apply border-[15px] border-primaryColor/45
+  @apply border-[15px] border-primaryColor/45 vsm:max-w-[430px]
 }
 
 /* Benefits Icons Section */
