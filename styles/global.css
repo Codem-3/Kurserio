@@ -21,7 +21,7 @@ html {
 }
 
 header {
-  @apply flex gap-5 py-3 justify-between items-center px-5 lg:px-20 min-h-20 z-50 bg-transparent w-full;
+  @apply flex gap-5 py-3 justify-between px-5 lg:px-20 min-h-20 z-50 bg-transparent w-full;
   transition: background-color 0.3s, backdrop-filter 0.3s, padding 0.3s, min-height 0.3s;
 }
 
@@ -54,7 +54,7 @@ footer>a {
 }
 
 #navLinks a:not(:nth-child(3)) {
-  @apply underline underline-offset-4 decoration-2 hover:decoration-4 transition-all
+  @apply hover:underline underline-offset-4 decoration-2 hover:decoration-4 transition-all
 }
 
 #navLinks a:nth-child(3), #sideMenu a:nth-child(3) {
@@ -281,19 +281,19 @@ li>article>button img {
 
 /* WARUM Kurserio Section */
 #warum {
-  @apply py-7 md:p-10 bg-[#f4f4f4]
+  @apply py-7 md:p-10
 }
 
 #warum>div {
-  @apply flex justify-center items-center text-xl tiny:text-2xl sm:text-4xl font-bold gap-2 tiny:gap-5 mb-10
+  @apply flex justify-center items-center text-xl tiny:text-2xl sm:text-4xl font-semibold gap-2 tiny:gap-5 mb-10
 }
 
 #warum>article {
-  @apply flex flex-col md:flex-row gap-5 lg:gap-20 justify-between lg:justify-center items-center m-5
+  @apply flex flex-col md:flex-row gap-5 lg:gap-10 justify-between lg:justify-center items-center m-5
 }
 
 #warum>article>div {
-  @apply flex flex-col justify-center items-center text-left gap-2 vsm:gap-5 max-w-[430px] md:max-w-[400px]
+  @apply flex flex-col justify-center items-center text-left gap-2 max-w-[430px] md:max-w-[400px]
 }
 
 #warum>article h1 {
@@ -305,7 +305,7 @@ li>article>button img {
 }
 
 #warum>article button {
-  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-44 vsm:max-w-48 py-2 text-sm vsm:text-base rounded-full font-semibold
+  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor hover:bg-primaryColor/40 w-full max-w-44 vsm:max-w-48 mt-2 py-2 text-sm vsm:text-base rounded-full font-semibold transition-all
 }
 
 #warum>article button>img {
@@ -313,12 +313,12 @@ li>article>button img {
 }
 
 #warum>article>img {
-  @apply border-[15px] border-primaryColor/45 vsm:max-w-[430px]
+  @apply vsm:max-w-[430px]
 }
 
 /* Benefits Icons Section */
 #benefits {
-  @apply flex flex-wrap justify-center items-start text-center gap-4 sm:gap-9 md:text-lg overflow-hidden bg-[#f4f4f4]
+  @apply flex flex-wrap justify-center items-start text-center gap-4 sm:gap-6 md:text-lg overflow-hidden bg-[#f4f4f4] p-5
 }
 
 #benefits>div {
@@ -326,74 +326,65 @@ li>article>button img {
 }
 
 #benefits>div>img {
-  @apply w-14 vsm:w-20
+  @apply w-14 vsm:w-16
 }
 
 /* Features Category Section */
 #features {
-  @apply bg-[#f4f4f4] py-5 p-2 vsm:p-5 md:p-10
+  @apply py-5 p-2 vsm:p-5 md:p-10
 }
 
 #features>h1 {
   @apply text-lg vsm:text-xl sm:text-2xl md:text-3xl text-center font-semibold mt-3
 }
 
-#features>nav {
-  @apply flex w-full flex-wrap text-center mt-5 vsm:mt-10 gap-5 lg:gap-10 xl:gap-16 px-5 justify-center items-center text-[#1a1e30]
+#features>div>nav {
+  @apply flex w-full flex-wrap text-center gap-5 lg:gap-10 p-3 justify-center items-center text-[#1a1e30]
 }
 
-#features>nav>a {
-  @apply cursor-pointer hover:underline hover:decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105
+#features>div>nav>a {
+  @apply cursor-pointer hover:underline decoration-primaryColor hover:decoration-2 underline-offset-4 active:scale-105 transition-all
 }
 
-#features>article {
-  @apply flex-col-reverse xl:flex-row w-full justify-between bg-[#f4f4f4] rounded-xl border-4 border-white mt-10 overflow-hidden
+#features>div>article {
+  @apply flex-col-reverse xl:flex-row w-full justify-between rounded-xl border-4 border-white overflow-hidden
 }
 
-#features>article div {
+#features>div>article div {
   @apply py-5 p-2 vsm:p-5
 }
 
-#features>article h2 {
-  @apply text-lg sm:text-xl font-semibold
+#features>div>article h2 {
+  @apply text-lg p-0 font-semibold text-left
 }
 
-#features>article h3 {
-  @apply text-3xl sm:text-5xl font-semibold my-2
+#features>div>article h3 {
+  @apply text-3xl sm:text-4xl font-semibold my-2
 }
 
-#features>article p {
-  @apply vsm:text-lg sm:text-xl xl:max-w-[600px]
+#features>div>article p {
+  @apply vsm:text-lg xl:max-w-[600px]
 }
 
-#features>article ul {
+#features>div>article ul {
   @apply list-disc p-5
 }
 
-/* Still have questions Section */
-#questions h1, h2 {
-  @apply p-5 text-xl md:text-2xl text-center
-}
-
-#questions>button {
-  @apply relative flex text-center mx-auto my-3 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 py-1 sm:py-5 rounded-full
-}
-
-#questions>button>img {
-  @apply absolute right-1
+#features>div>article>img {
+  @apply lg:max-w-[550px] mx-auto xl:mx-0 object-fill
 }
 
 /* Faire Preise Section */
 #fair {
-  @apply p-5 lg:p-10
+  @apply p-5 lg:p-10 bg-[#F5F5F5]
 }
 
 #fair>h1 {
-  @apply text-xl md:text-4xl font-semibold text-center
+  @apply text-xl md:text-3xl font-semibold text-center
 }
 
 #fair>h2 {
-  @apply text-xl md:text-3xl font-semibold text-center my-5 md:my-10
+  @apply text-xl md:text-2xl font-medium text-center my-5 md:my-10
 }
 
 #fair>div {
@@ -409,7 +400,7 @@ li>article>button img {
 }
 
 #fair>div>span>p {
-  @apply relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full
+  @apply relative bg-fourthlyColor text-primaryColor font-semibold md:text-xl py-2 text-center w-full vsm:w-48 md:w-72 rounded-full shadow
 }
 
 #fair>div>span>p>img {
@@ -459,4 +450,22 @@ li>article>button img {
 
 #splide-subscription li>div>button>p {
   @apply ml-5
+}
+
+/* Still have questions Section */
+#questions h1,
+h2 {
+  @apply p-5 text-xl md:text-2xl text-center
+}
+
+#questions>button {
+  @apply relative flex text-center mx-auto my-3 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 py-1 sm:py-5 rounded-full
+}
+
+#questions>button>img {
+  @apply absolute right-1
+}
+
+* {
+  /* outline: 1px solid red; */
 }

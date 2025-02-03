@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Update link styles
             featureLinks.forEach(link => {
-                link.classList.remove("underline", "underline-offset-4", "decoration-primaryColor", "decoration-2", "text-black", "font-semibold");
+                link.classList.remove("underline", "underline-offset-4", "decoration-primaryColor", "decoration-4", "text-black", "font-bold");
             });
-            this.classList.add("underline", "underline-offset-4", "decoration-primaryColor", "decoration-2", "text-black", "font-semibold");
+            this.classList.add("underline", "underline-offset-4", "decoration-primaryColor", "decoration-4", "text-black", "font-bold");
         });
     });
 });

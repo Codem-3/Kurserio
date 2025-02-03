@@ -580,6 +580,10 @@ video {
   right: -0px;
 }
 
+.-right-2{
+  right: -0.5rem;
+}
+
 .bottom-2{
   bottom: 0.5rem;
 }
@@ -604,18 +608,22 @@ video {
   z-index: 10;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-1{
   margin-top: 0.25rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .flex{
@@ -654,16 +662,12 @@ video {
   width: 7rem;
 }
 
-.w-32{
-  width: 8rem;
+.w-40{
+  width: 10rem;
 }
 
 .w-\[155px\]{
   width: 155px;
-}
-
-.max-w-\[700px\]{
-  max-width: 700px;
 }
 
 .translate-x-full{
@@ -677,6 +681,10 @@ video {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .rounded-3xl{
@@ -712,6 +720,11 @@ video {
   background-color: rgb(231 223 216 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#f4f4f4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#f9d080\]{
   --tw-bg-opacity: 1;
   background-color: rgb(249 208 128 / var(--tw-bg-opacity, 1));
@@ -739,6 +752,11 @@ video {
 
 .p-2{
   padding: 0.5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-12{
@@ -782,10 +800,6 @@ video {
   font-weight: 500;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .underline{
   text-decoration-line: underline;
 }
@@ -796,6 +810,16 @@ video {
 
 .decoration-secondaryColor{
   text-decoration-color: #bec4ed;
+}
+
+.decoration-4{
+  text-decoration-thickness: 4px;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /*! -------------------- Global Styles -------------------- */
@@ -816,7 +840,6 @@ header{
   display: flex;
   min-height: 5rem;
   width: 100%;
-  align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
   background-color: transparent;
@@ -942,7 +965,6 @@ footer>a{
 }
 
 #navLinks a:not(:nth-child(3)){
-  text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   transition-property: all;
@@ -951,6 +973,7 @@ footer>a{
 }
 
 #navLinks a:not(:nth-child(3)):hover{
+  text-decoration-line: underline;
   text-decoration-thickness: 4px;
 }
 
@@ -1450,8 +1473,6 @@ li>article>button img{
 /* WARUM Kurserio Section */
 
 #warum{
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
@@ -1470,7 +1491,7 @@ li>article>button img{
   gap: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @media (min-width: 360px){
@@ -1506,7 +1527,7 @@ li>article>button img{
 @media (min-width: 1024px){
   #warum>article{
     justify-content: center;
-    gap: 5rem;
+    gap: 2.5rem;
   }
 }
 
@@ -1518,12 +1539,6 @@ li>article>button img{
   justify-content: center;
   gap: 0.5rem;
   text-align: left;
-}
-
-@media (min-width: 460px){
-  #warum>article>div{
-    gap: 1.25rem;
-  }
 }
 
 @media (min-width: 910px){
@@ -1565,6 +1580,7 @@ li>article>button img{
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5rem;
   display: flex;
   width: 100%;
   max-width: 11rem;
@@ -1582,6 +1598,13 @@ li>article>button img{
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#warum>article button:hover{
+  background-color: rgb(221 244 135 / 0.4);
 }
 
 @media (min-width: 460px){
@@ -1595,11 +1618,6 @@ li>article>button img{
 #warum>article button>img{
   position: absolute;
   right: 0px;
-}
-
-#warum>article>img{
-  border-width: 15px;
-  border-color: rgb(221 244 135 / 0.45);
 }
 
 @media (min-width: 460px){
@@ -1619,12 +1637,13 @@ li>article>button img{
   overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
+  padding: 1.25rem;
   text-align: center;
 }
 
 @media (min-width: 690px){
   #benefits{
-    gap: 2.25rem;
+    gap: 1.5rem;
   }
 }
 
@@ -1651,15 +1670,13 @@ li>article>button img{
 
 @media (min-width: 460px){
   #benefits>div>img{
-    width: 5rem;
+    width: 4rem;
   }
 }
 
 /* Features Category Section */
 
 #features{
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
   padding: 0.5rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1706,58 +1723,46 @@ li>article>button img{
   }
 }
 
-#features>nav{
-  margin-top: 1.25rem;
+#features>div>nav{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding: 0.75rem;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(26 30 48 / var(--tw-text-opacity, 1));
 }
 
-@media (min-width: 460px){
-  #features>nav{
-    margin-top: 2.5rem;
-  }
-}
-
 @media (min-width: 1024px){
-  #features>nav{
+  #features>div>nav{
     gap: 2.5rem;
   }
 }
 
-@media (min-width: 1280px){
-  #features>nav{
-    gap: 4rem;
-  }
-}
-
-#features>nav>a{
+#features>div>nav>a{
   cursor: pointer;
+  text-decoration-color: #ddf487;
   text-underline-offset: 4px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-#features>nav>a:hover{
+#features>div>nav>a:hover{
   text-decoration-line: underline;
-  text-decoration-color: #ddf487;
   text-decoration-thickness: 2px;
 }
 
-#features>nav>a:active{
+#features>div>nav>a:active{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-#features>article{
-  margin-top: 2.5rem;
+#features>div>article{
   width: 100%;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -1766,42 +1771,35 @@ li>article>button img{
   border-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 1280px){
-  #features>article{
+  #features>div>article{
     flex-direction: row;
   }
 }
 
-#features>article div{
+#features>div>article div{
   padding: 0.5rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
 @media (min-width: 460px){
-  #features>article div{
+  #features>div>article div{
     padding: 1.25rem;
   }
 }
 
-#features>article h2{
+#features>div>article h2{
+  padding: 0px;
+  text-align: left;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 
-@media (min-width: 690px){
-  #features>article h2{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-#features>article h3{
+#features>div>article h3{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.875rem;
@@ -1810,90 +1808,55 @@ li>article>button img{
 }
 
 @media (min-width: 690px){
-  #features>article h3{
-    font-size: 3rem;
-    line-height: 1;
+  #features>div>article h3{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (min-width: 460px){
-  #features>article p{
+  #features>div>article p{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width: 690px){
-  #features>article p{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
 @media (min-width: 1280px){
-  #features>article p{
+  #features>div>article p{
     max-width: 600px;
   }
 }
 
-#features>article ul{
+#features>div>article ul{
   list-style-type: disc;
   padding: 1.25rem;
 }
 
-/* Still have questions Section */
-
-#questions h1, h2{
-  padding: 1.25rem;
-  text-align: center;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-@media (min-width: 910px){
-  #questions h1, h2{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-#questions>button{
-  position: relative;
+#features>div>article>img{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  display: flex;
-  width: 100%;
-  max-width: 18rem;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
-  border-width: 4px;
-  --tw-border-opacity: 1;
-  border-color: rgb(221 244 135 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 222 212 / var(--tw-bg-opacity, 1));
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  text-align: center;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
-@media (min-width: 690px){
-  #questions>button{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+@media (min-width: 1024px){
+  #features>div>article>img{
+    max-width: 550px;
   }
 }
 
-#questions>button>img{
-  position: absolute;
-  right: 0.25rem;
+@media (min-width: 1280px){
+  #features>div>article>img{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 /* Faire Preise Section */
 
 #fair{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
   padding: 1.25rem;
 }
 
@@ -1912,8 +1875,8 @@ li>article>button img{
 
 @media (min-width: 910px){
   #fair>h1{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1923,15 +1886,15 @@ li>article>button img{
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (min-width: 910px){
   #fair>h2{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1992,6 +1955,9 @@ li>article>button img{
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(221 244 135 / var(--tw-text-opacity, 1));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 460px){
@@ -2112,6 +2078,62 @@ li>article>button img{
   margin-left: 1.25rem;
 }
 
+/* Still have questions Section */
+
+#questions h1,
+h2{
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 910px){
+  #questions h1,
+h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+#questions>button{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  width: 100%;
+  max-width: 18rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(221 244 135 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 222 212 / var(--tw-bg-opacity, 1));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+
+@media (min-width: 690px){
+  #questions>button{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+#questions>button>img{
+  position: absolute;
+  right: 0.25rem;
+}
+
+* {
+  /* outline: 1px solid red; */
+}
+
 .hover\:bg-primaryColor\/40:hover{
   background-color: rgb(221 244 135 / 0.4);
 }
@@ -2130,29 +2152,6 @@ li>article>button img{
   color: rgb(168 185 104 / var(--tw-text-opacity, 1));
 }
 
-@media (min-width: 360px){
-  .tiny\:-right-1{
-    right: -0.25rem;
-  }
-
-  .tiny\:bottom-0{
-    bottom: 0px;
-  }
-
-  .tiny\:w-32{
-    width: 8rem;
-  }
-
-  .tiny\:w-\[155px\]{
-    width: 155px;
-  }
-
-  .tiny\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 @media (min-width: 460px){
   .vsm\:-bottom-1{
     bottom: -0.25rem;
@@ -2166,8 +2165,13 @@ li>article>button img{
     display: block;
   }
 
-  .vsm\:w-36{
-    width: 9rem;
+  .vsm\:w-32{
+    width: 8rem;
+  }
+
+  .vsm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .vsm\:text-lg{
@@ -2176,7 +2180,19 @@ li>article>button img{
   }
 }
 
+@media (min-width: 690px){
+  .sm\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
 @media (min-width: 910px){
+  .md\:mx-24{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .md\:ml-auto{
     margin-left: auto;
   }
