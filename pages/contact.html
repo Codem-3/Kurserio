@@ -4,11 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/symbol.png">
+    <link href="../styles/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Kurserio Kontakt</title>
 </head>
 
 <body>
 
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-[#f4f4f4] py-7">
+        <!-- Custom Logo Icon -->
+        <a href="../index.html" class="custom-logo items-end w-[155px] my-auto">
+            <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-28 vsm:w-32">
+            <p class="absolute -bottom-0 vsm:-bottom-1 -right-0 vsm:-right-4 vsm:text-lg">Studio</p>
+        </a>
+
+        <!-- Burger Menu Icon for small screens -->
+        <button id="burgerMenu">
+            <img src="../assets/icons/menu.svg" alt="BurgerMenu Icon">
+        </button>
+        <!-- Navigation -->
+        <nav id="navLinks" class="decoration-primaryColor">
+            <a href="#">Funktionen</a>
+            <a href="#">Preise</a>
+            <a href="#" class="bg-[#e7dfd8] font-medium p-2 rounded-3xl">Kostenlose Demo</a>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileNav" class="hidden">
+            <div id="sideMenu" class="transform translate-x-full">
+                <button id="closeMenu">
+                    <img src="../assets/icons/close.svg" alt="CloseMenu Icon">
+                </button>
+                <nav>
+                    <a href="">Funktionen</a>
+                    <a href="">Preise</a>
+                    <a href="" class="bg-[#e7dfd8] text-center font-medium py-2 rounded-full">Kostenlose Demo</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Book Consultation Section -->
+    <section id="contact">
+        <p data-aos="fade-in">
+            Buche dein kostenloses Beratungsgespräch
+        </p>
+
+        <div>
+
+            <!-- Icons Section -->
+            <aside>
+                <!-- Organisation erleichtern -->
+                <div data-aos="fade-right">
+                    <img src="../assets/icons/forContact/gemeinsam.png" alt="Organisation erleichtern">
+                    <p>Gemeinsam analysieren wir, welche Aufgaben dir besonders viel Zeit rauben.</p>
+                </div>
+
+                <!-- Zeit sparen -->
+                <div data-aos="fade-right">
+                    <img src="../assets/icons/forContact/zeigen.png" alt="Zeit sparen">
+                    <p>Wir zeigen dir die vielseitigen Funktionen vom Kurserio Studio Tool.</p>
+                </div>
+
+                <!-- Zufriedene Kunden -->
+                <div data-aos="fade-right">
+                    <img src="../assets/icons/forContact/stehen.png" alt="Zufriedene Kunden">
+                    <p>Wir stehen dir für alle Fragen zur Verfügung.</p>
+                </div>
+            </aside>
+
+            <!-- Contact Form Section -->
+            <div data-aos="fade-left">
+                <!-- Contact Information -->
+                <div class="w-full">
+                    <h2>E-Mail:
+                        <a href="mailto:info@kurserio.de" class="font-bold">info@kurserio.de</a>
+                    </h2>
+                    <h2>Mobil:
+                        <a href="tel:017644464030" class="font-bold">0176 44464030</a>
+                    </h2>
+                </div>
+
+                <!-- Form -->
+                <form id="contact-form">
+                    <div class="flex gap-3">
+                        <!-- First Name Field -->
+                        <div>
+                            <label for="vorname">Vorname*</label>
+                            <input type="text" id="vorname" name="vorname" placeholder="Vorname" required>
+                        </div>
+
+                        <!-- Last Name Field -->
+                        <div>
+                            <label for="nachname">Nachname</label>
+                            <input type="text" id="nachname" name="nachname" placeholder="Nachname">
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <!-- Telephone Field -->
+                    <div>
+                        <label for="telephone">Telefonnummer</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Telefonnummer">
+                    </div>
+
+                    <!-- Privacy Policy -->
+                    <p>
+                        Mit dem Absenden des Kontaktformulars akzeptiere ich die Datenschutzerklärung.
+                    </p>
+
+                    <!-- Submit Button -->
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-v2 bg-[#f4f4f4]">
+        <!-- Custom Logo Icon -->
+        <a href="../index.html" class="custom-logo items-end w-[155px] my-auto">
+            <img src="../assets/images/Logo.png" alt="Kurserio Icon" class="w-28">
+            <p class="absolute -bottom-0 -right-0">Studio</p>
+        </a>
+        <div id="animtaed-text">
+            <a href="./contact.html" class="active">Kontakt</a>
+            <a href="#">Cookie Einstellungen</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">Impressum</a>
+        </div>
+    </footer>
 </body>
+
+<!-- All Page Scripts -->
+<script src="../scripts/headerHandler.js"></script> <!-- Handle Responsive Header -->
+<!-- AOS Animations -->
+<script>
+    AOS.init({
+        // Global settings:
+        offset: 120, // Offset (in pixels) from the original trigger point
+        delay: 0, // Delay (in milliseconds) between the element appearing and the animation starting
+        duration: 800, // Duration (in milliseconds) of the animation
+        easing: 'ease', // Easing function for the animation
+        once: false, // Whether animation should happen only once - while scrolling down
+        mirror: false, // Whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
+    });
+</script>
 
 </html>

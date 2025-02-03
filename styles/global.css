@@ -41,11 +41,11 @@ header>img {
 }
 
 .footer-v2 {
-  @apply flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2 px-2 vsm:px-5 lg:px-14 transition-all pb-2 pt-7 sm:py-10 my-auto
+  @apply flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2 px-2 vsm:px-5 lg:px-14 transition-all pb-2 pt-7 sm:py-5 my-auto
 }
 
 .footer-v2>div {
-  @apply flex flex-wrap justify-center vsm:justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 sm:gap-5 mt-2
+  @apply flex flex-wrap justify-center vsm:justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 sm:gap-5 relative mt-auto
 }
 
 /* Responsive Header For Mobile Screen */
@@ -97,9 +97,9 @@ header>img {
 /* Footer Links Animations */
 #animtaed-text a {
   background-image: linear-gradient(to right,
-      #8d8a7e,
-      #8d8a7e 50%,
-      #000 50%);
+      #000000,
+      #000000 50%,
+      #000000c4 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -113,7 +113,7 @@ header>img {
 
 #animtaed-text a:before {
   content: '';
-  background: #ebded4;
+  background: #0000009c;
   display: block;
   position: absolute;
   bottom: 1px;
@@ -125,6 +125,15 @@ header>img {
 
 #animtaed-text a:hover {
   background-position: 0;
+}
+
+#animtaed-text a.active {
+  background-position: 0;
+  background-image: linear-gradient(to right,
+      #000000,
+      #000000 50%,
+      #000 50%);
+  font-weight: 600;
 }
 
 #animtaed-text a:hover::before {
@@ -310,7 +319,7 @@ li>article>button img {
 }
 
 #warum>article button {
-  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor hover:bg-primaryColor/40 w-full max-w-44 vsm:max-w-48 mt-2 py-2 text-sm vsm:text-base rounded-full font-semibold transition-all
+  @apply relative flex justify-center mx-auto items-center gap-2 border-4 bg-thirdlyColor border-primaryColor hover:bg-primaryColor/40 w-full max-w-44 vsm:max-w-52 mt-2 py-2 text-sm vsm:text-base rounded-full font-semibold transition-all
 }
 
 #warum>article button>img {
@@ -469,6 +478,68 @@ h2 {
 
 #questions>button>img {
   @apply absolute right-1
+}
+
+
+
+/*! Kontakt Page  */
+
+#contact {
+  @apply mt-36 m-5 
+}
+
+#contact>p {
+  @apply text-xl md:text-2xl font-semibold w-full text-center
+}
+
+#contact>div {
+  @apply flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10 sm:w-3/4 mx-auto
+}
+
+/* side icon section */
+#contact>div>aside {
+  @apply flex flex-wrap sm:flex-nowrap lg:flex-col justify-center gap-9 lg:max-w-80 text-center lg:text-left mt-10 lg:mb-14
+}
+
+#contact>div>aside div {
+  @apply flex flex-col lg:flex-row gap-3 items-center
+}
+
+#contact>div>aside img {
+  @apply w-16
+}
+
+#contact>div>div {
+  @apply flex flex-col justify-center items-center sm:p-8 w-full
+}
+
+#contact>div>div h2 {
+  @apply text-sm text-black/75 p-2 font-semibold text-right my-3 sm:my-0
+}
+
+/* form section */
+#contact-form {
+  @apply flex flex-col justify-center items-center gap-4 w-full
+}
+
+#contact-form div {
+  @apply w-full
+}
+
+#contact-form label {
+  @apply block text-sm text-black/75 uppercase font-bold
+}
+
+#contact-form input {
+  @apply mt-2 block w-full px-3 py-2 border-2 border-gray-300 shadow-sm text-black/80 focus:outline-none focus:border-primaryColor font-medium h-12
+}
+
+#contact-form p {
+  @apply font-semibold text-black/75 text-center text-sm vsm:text-base
+}
+
+#contact-form button {
+  @apply w-56 bg-primaryColor py-4 rounded-full hover:bg-primaryColor/55 my-2
 }
 
 * {
