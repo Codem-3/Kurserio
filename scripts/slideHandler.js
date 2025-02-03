@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 perPage: 1,
                 gap: '10px',
                 focus: 'center',
-                padding: {
-                    left: '20px',
-                    right: '20px',
-                },
             },
         },
     }).mount();

@@ -880,14 +880,15 @@ header>img{
   }
 }
 
-footer{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.footer{
   display: flex;
   height: 4rem;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
   transition-property: all;
@@ -895,37 +896,96 @@ footer{
   transition-duration: 150ms;
 }
 
-@media (min-width: 360px){
-  footer{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-}
-
 @media (min-width: 460px){
-  footer{
-    gap: 1.25rem;
+  .footer{
+    justify-content: flex-end;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 690px){
-  footer{
+  .footer{
+    gap: 1.25rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 1024px){
-  footer{
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+  .footer{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
 
-footer>a{
-  z-index: 40;
+.footer-v2{
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1.75rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (min-width: 460px){
+  .footer-v2{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 690px){
+  .footer-v2{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .footer-v2{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+.footer-v2>div{
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 460px){
+  .footer-v2>div{
+    justify-content: flex-end;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 690px){
+  .footer-v2>div{
+    gap: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* Responsive Header For Mobile Screen */
@@ -1094,6 +1154,7 @@ footer>a{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  z-index: 999;
 }
 
 #animtaed-text a:before {
@@ -1991,19 +2052,22 @@ li>article>button img{
 #splide-subscription{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1056px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-@media (min-width: 910px){
+@media (min-width: 460px){
   #splide-subscription{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
 
 #splide-subscription li{
-  max-width: 24rem;
+  max-width: 20rem;
 }
 
 #splide-subscription li>div{
@@ -2015,6 +2079,9 @@ li>article>button img{
   border-radius: 1.5rem;
   background-color: rgb(231 223 216 / 0.5);
   padding: 1.25rem;
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 #splide-subscription li>div>img{
@@ -2031,6 +2098,9 @@ li>article>button img{
 }
 
 #splide-subscription li>div>h2{
+  margin-bottom: 0.75rem;
+  padding: 0px;
+  text-align: left;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -2118,10 +2188,14 @@ h2{
   text-align: center;
 }
 
+#questions>button:hover{
+  background-color: rgb(221 244 135 / 0.4);
+}
+
 @media (min-width: 690px){
   #questions>button{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 }
 

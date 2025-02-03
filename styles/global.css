@@ -36,12 +36,16 @@ header>img {
   @apply w-32 vsm:w-36;
 }
 
-footer {
-  @apply flex justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 vsm:gap-5 mx-2 tiny:mx-5 lg:mx-14 transition-all h-16
+.footer {
+  @apply flex flex-wrap justify-center vsm:justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 sm:gap-5 px-2 vsm:px-5 lg:px-14 transition-all h-16
 }
 
-footer>a {
-  @apply z-40
+.footer-v2 {
+  @apply flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2 px-2 vsm:px-5 lg:px-14 transition-all pb-2 pt-7 sm:py-10 my-auto
+}
+
+.footer-v2>div {
+  @apply flex flex-wrap justify-center vsm:justify-end items-center text-xs vsm:text-sm sm:text-base gap-2 sm:gap-5 mt-2
 }
 
 /* Responsive Header For Mobile Screen */
@@ -104,6 +108,7 @@ footer>a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  z-index: 999;
 }
 
 #animtaed-text a:before {
@@ -409,15 +414,15 @@ li>article>button img {
 
 /* Subscription Plans Section */
 #splide-subscription {
-  @apply my-5 px-5 md:px-20
+  @apply my-5 mx-auto max-w-[1056px] px-4 vsm:px-14
 }
 
 #splide-subscription li {
-  @apply max-w-96
+  @apply max-w-80
 }
 
 #splide-subscription li>div {
-  @apply relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col
+  @apply relative bg-[#e7dfd8]/50 w-auto rounded-3xl p-5 h-full flex flex-col shadow-inner
 }
 
 #splide-subscription li>div>img {
@@ -429,7 +434,7 @@ li>article>button img {
 }
 
 #splide-subscription li>div>h2 {
-  @apply font-semibold text-2xl
+  @apply font-semibold text-2xl p-0 text-left mb-3
 }
 
 #splide-subscription li>div>p {
@@ -459,7 +464,7 @@ h2 {
 }
 
 #questions>button {
-  @apply relative flex text-center mx-auto my-3 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor w-full max-w-72 py-1 sm:py-5 rounded-full
+  @apply relative flex text-center mx-auto my-3 items-center gap-2 border-4 bg-thirdlyColor border-primaryColor hover:bg-primaryColor/40 w-full max-w-72 py-1 sm:py-3 rounded-full
 }
 
 #questions>button>img {
